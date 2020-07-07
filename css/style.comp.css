@@ -772,7 +772,7 @@ body {
       height: 95vh; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/ehero.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -780,9 +780,10 @@ body {
   .header__logo-box {
     position: absolute;
     top: 4rem;
-    left: 4rem; }
+    left: 4rem;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
   .header__logo {
-    height: 3.5rem; }
+    height: 6rem; }
   .header__text-box {
     position: absolute;
     top: 40%;

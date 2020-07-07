@@ -23,7 +23,7 @@
             to right bottom,
             rgba($color-primary-light, 0.8),
             rgba($color-primary-dark, 0.8)),
-        url(../img/hero.jpg);
+        url(../img/ehero.jpg);
     }
 
     @include respond(phone) {
@@ -35,10 +35,11 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     }
 
     &__logo {
-        height: 3.5rem;
+        height: 6rem;
     }
     
     &__text-box {
