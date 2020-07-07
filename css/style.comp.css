@@ -607,8 +607,8 @@ body {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
-  padding: 6rem;
-  padding-left: 9rem;
+  padding: 9rem;
+  padding-left: 11rem;
   font-size: 1.6rem;
   transform: skewX(-12deg); }
   @media only screen and (max-width: 56.25em) {
