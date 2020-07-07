@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-grey-dark-3;
-    padding: 10rem 0;
+    padding: 8rem 0;
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
@@ -10,13 +10,10 @@
 
     &__logo-box {
         text-align: center;
-        top: 4rem;
-        left: 4rem;
-        margin-bottom: 8rem;
-        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        margin-bottom: 2.5rem;
 
         @include respond(tab-port) {
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
         }
     }
 

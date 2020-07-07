@@ -1115,7 +1115,7 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 8rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
@@ -1123,13 +1123,10 @@ body {
       padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
-    top: 4rem;
-    left: 4rem;
-    margin-bottom: 8rem;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
+    margin-bottom: 2.5rem; }
     @media only screen and (max-width: 56.25em) {
       .footer__logo-box {
-        margin-bottom: 6rem; } }
+        margin-bottom: 4rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
