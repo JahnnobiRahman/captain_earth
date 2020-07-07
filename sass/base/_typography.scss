@@ -15,8 +15,8 @@ body {
 
     &--main {
         display: block;
-        font-size: 5.5rem;
-        font-weight: 400;
+        font-size: 6rem;
+        font-weight: 700;
         letter-spacing: 1rem;
     
         animation-name: moveInLeft;
@@ -36,7 +36,7 @@ body {
     &--sub {
         display: block;
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: 400;
         letter-spacing: 1.5rem;
         animation: moveInRight 1s ease-out;
 
@@ -49,10 +49,11 @@ body {
 .heading-secondary {
     font-size: 3.5rem;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
