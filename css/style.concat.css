@@ -1427,3 +1427,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .book__form {
         width: 100%; } }
+
+.section-task {
+  background-color: #f7f7f7;
+  padding: 15rem 0 15rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .section-task {
+      padding: 10rem 0; } }

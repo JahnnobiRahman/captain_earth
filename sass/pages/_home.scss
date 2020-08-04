@@ -96,3 +96,13 @@ url(../img/nat-10.jpg);
         }
     }
 }
+
+.section-task {
+
+    background-color: $color-grey-light-1;
+    padding: 15rem 0 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
