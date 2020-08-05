@@ -7,13 +7,35 @@ body {
 }
 
 .heading-primary {
-    color: $color-white;
+    
     text-transform: uppercase;
 
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
+        color: $color-white;
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+
+    &--task_aol {
+        color: $color-red-light;
         display: block;
         font-size: 6rem;
         font-weight: 700;
