@@ -112,11 +112,7 @@ body {
     background-image: linear-gradient(to right, #ff7700, #ff0000);
     background-clip: text;
     color: transparent;
-    -webkit-background-clip: text;
-    /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */ }
+    -webkit-background-clip: text; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--task_aol {
         letter-spacing: 1rem;
@@ -124,10 +120,46 @@ body {
     @media only screen and (max-width: 56.25em) {
       .heading-primary--task_aol {
         font-size: 3rem; } }
-    .heading-primary--task_aol:hover {
-      transform: skewY(2deg) skewX(15deg) scale(1.1);
-      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .heading-primary--task_gw {
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--task_gw {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--task_gw {
+        font-size: 3rem; } }
+  .heading-primary--task_lead {
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    background-image: linear-gradient(to right, #2998ff, #5643fa);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--task_lead {
+        letter-spacing: 1rem;
+        font-family: 5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--task_lead {
+        font-size: 3rem; } }
   .heading-primary--sub {
+    color: #fff;
     display: block;
     font-size: 2rem;
     font-weight: 400;
@@ -135,6 +167,15 @@ body {
     animation: moveInRight 1s ease-out; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
+        letter-spacing: .5rem; } }
+  .heading-primary--sub_task {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation: moveInRight 1s ease-out; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub_task {
         letter-spacing: .5rem; } }
 
 .heading-secondary {
