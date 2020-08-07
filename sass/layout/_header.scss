@@ -55,11 +55,7 @@
 .taskheader__aol {
 
     
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-grey-light, 0.8),
-        rgba($color-grey-dark, 0.8)),
-    url(../img/aol02.jpg);
+    background-color: rgba($color-grey-light, 0.8);
     
 
     height: 55vh;
