@@ -7,13 +7,14 @@ body {
 }
 
 .heading-primary {
-    color: $color-white;
+    
     text-transform: uppercase;
 
     backface-visibility: hidden;
     margin-bottom: 6rem;
 
     &--main {
+        color: $color-white;
         display: block;
         font-size: 6rem;
         font-weight: 700;
@@ -32,8 +33,100 @@ body {
         animation-iteration-count: 3;
         */
     }
+
+    &--task_aol {
+        
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        background-image: linear-gradient(to right, $color-red-light, $color-red-dark);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        
+    }
+
+    &--task_gw {
+        
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        
+    }
+
+    &--task_lead {
+        
+        display: inline-block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 1rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+        }
+        
+    }
     
     &--sub {
+        color : $color-white;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.5rem;
+        animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+
+    &--sub_task {
+        
         display: block;
         font-size: 2rem;
         font-weight: 400;
