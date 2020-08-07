@@ -55,20 +55,22 @@
 .taskheader__aol {
 
     
-    background-color: rgba($color-grey-light, 0.8);
+    background-color: rgba($color-grey-light, 0.9);
     
 
-    height: 55vh;
+    height: 45vh;
     
     background-size: cover;
     background-position: center;
     position: relative;
     
-
+   
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 55vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+
+        clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    
+        height: 70vh;
     }
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
@@ -76,8 +78,8 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba($color-grey-light, 0.8),
-            rgba($color-grey-dark, 0.8)),
+            rgba($color-grey-light, 0.9),
+            rgba($color-grey-dark, 0.9)),
         url(../img/ehero.jpg);
     }
 
@@ -99,7 +101,7 @@
     
     &__text-box {
         position: absolute;
-        top: 40%;
+        top: 48%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
