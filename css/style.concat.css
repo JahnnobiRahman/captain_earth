@@ -1114,6 +1114,16 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: #55c57a; }
+  .popup__task {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .story {
   width: 75%;

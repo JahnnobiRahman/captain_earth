@@ -57,41 +57,89 @@
             <div class="row">
                 <div class="col-2-of-3">
                     <div class="u-margin-bottom-big">
-                        <h3 class="heading-secondary">
-                            Task details
-                        </h3>
-            </div>
-                   
-                <p class="popup__text">
-                    Complete a book in 7 days.
-                    <br>
-                    <b>Points : 50</b>
+                        
+                            <h3 class="heading-secondary">
+                                Task details
+                                <br>
+                                <b>Points : 50</b>
+                            </h3>
+            
+                    </div>
+                        <p class="popup__task">
+                            Complete a book within the selected timeline. After timeout ,
+                            3 basic questions regarding the book will be given.
+                            If 1 answer is correct, will go to next task.if more more point will be given and go to next task.
+                            If 0 answer, try again with another book.
+                            <br>
+                            Don't want to read any of these books:
+                            <br>
+                            Contribute here(give link to new book pdf)- make 3 question and answer 
+                             of the book)-submit to us for reviewing- if ok then added to list 
+                             and going to next task
+                            <br>
+
+                            
+                        
+                        </p>
+
+
+
+                        <form action="#">
+                            <b><h4 class = "heading-tertiary popup__task"> Timeline </h4></b>
+                           
+                            <select class="time popup__task">
+                                <option value="1">1-Week</option>
+                                <option value="3" selected= "selected ">3-Weeks</option>
+                                <option value="2">2-Weeks</option>
+                            </select>
+                               
+                    
+                            
+                            <div class = "popup__task">
+                                <input type ="checkbox" name ="read_book "> 
+                                  Read theBook
+                                <br>
+                                <input type ="checkbox" name ="review"> 
+                                 Submit a Review
+                                <br>
+                                <input type ="checkbox" name ="contribute"> 
+                                  Contribute PDF/Link
+                                <br>
+                                <br>
+                            
+                                <a href="index.html" class="btn btn--green">Submit</a>
+                                
+                               <br>
+                            </div>
+            
+                        </form>
                 
-                </p>
-
-                <a href="index.html" class="btn btn--green">Submit</a>
-            </div>
-
-            <div class="col-1-of-3">
-                <div class="composition">
-
-                    <img srcset="img/will1.jpg 300w, img/will1.jpg 1000w"
-                         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                         alt="Photo 1"
-                         class="composition__photo composition__photo--p1"
-                         src="img/will1.jpg">
-
-
-                    <img srcset="img/will2.jpg 300w, img/will2.jpg 1000w"
-                         sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                         alt="Photo 3"
-                         class="composition__photo composition__photo--p3"
-                         src="img/will2.jpg">
-
-
                 </div>
+
+            
+                <div class="col-1-of-3">
+                    <div class="composition">
+
+                        <img srcset="img/will1.jpg 300w, img/will1.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 1"
+                                class="composition__photo composition__photo--p1"
+                                src="img/will1.jpg">
+
+
+                        <img srcset="img/will2.jpg 300w, img/will2.jpg 1000w"
+                                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                alt="Photo 3"
+                                class="composition__photo composition__photo--p3"
+                                src="img/will2.jpg">
+
+
+                    </div>
+                </div>
+
             </div>
-        </div>
+        
+
 
     <div class="footer__logo-box u-center-text">
             <picture class="footer__logo">
@@ -102,7 +150,7 @@
                 style="clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
 
             <p class="u-center-text">
-            <a href="#" class="footer__link"> Captain Earth </a>
+            <a href="index.html" class="footer__link"> Captain Earth </a>
             </p>
         </picture>
     </div>
