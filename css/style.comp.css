@@ -497,6 +497,12 @@ body {
   font-weight: 500;
   text-transform: uppercase; }
 
+.heading-secondary_white {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -504,6 +510,9 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-text {
+  color: #fff !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
