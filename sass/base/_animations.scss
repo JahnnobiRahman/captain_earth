@@ -48,3 +48,98 @@
     70%{ opacity: 1; transform: scale(1.1); }
     100%{ opacity: 0; transform: scale(0.3); }
     }
+
+
+    @keyframes moveArrow{
+        0%{ //for 0sec
+              left: 1%;
+              background: rgba(248,187,208 ,1);
+          transform: rotate(0deg); 		
+        }
+          90%{
+              left: 88%;
+              background: $color-letter;		
+        } 
+        100%{ //for all sec
+              background: $color-letter;
+          transform: rotate(180deg);		
+        }  
+      }
+
+
+
+      @keyframes graph-1 {
+        0% {
+            //for 0sec
+            height: 0%;
+            top: 100%;
+        }
+        100% {
+            //for all sec
+            height: 30%;
+        }
+    }
+  
+    @keyframes graph-3 {
+        0% {
+            //for 0sec
+            height: 0%;
+            top: 100%;
+        }
+        100% {
+            //for all sec
+            height: 80%;
+        }
+    }
+    @keyframes graph-4 {
+        0% {
+            //for 0sec
+            height: 0%;
+            top: 100%;
+        }
+        100% {
+            //for all sec
+            height: 100%;
+        }
+    }
+   
+
+
+    @keyframes line30 {
+        0% {
+            width: 0%;
+            left: 99%;
+        }
+        100% {
+            width: 79%;
+        }
+    }
+    @keyframes line50 {
+        0% {
+            width: 0%;
+            left: 99%;
+        }
+        100% {
+            width: 77%;
+        }
+    }
+    @keyframes line80 {
+        0% {
+            width: 0%;
+            left: 99%;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+    @keyframes line100 {
+        0% {
+            width: 0%;
+            left: 99%;
+        }
+        100% {
+            width: 43%;
+        }
+    }
+ 
+    

@@ -87,3 +87,206 @@ body {
         }
     }
 }
+
+
+.box{  
+    position: relative;
+    margin: auto;
+    display: block;
+    /*optional background or border*/
+    //border: solid 4px red;
+    
+    margin-top: 4%;
+    width: 650px;
+    height: 450px;
+    background: none;
+  }
+  //shape ready from clipy tool
+  .arrow{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 15%;
+    height: 15%;
+    background: $color-letter;
+      
+    -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+      
+    animation: moveArrow 3s 1;
+  }
+
+
+  .num-bar{
+	position: absolute;
+  top: 1%;
+  left: 98%;
+  width: 1%;
+  height: 100%;
+  background: $color-letter;
+}
+
+.num-bar-10 {
+	position: absolute;
+	top: 90%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-10;
+}
+.num-bar-20 {
+	position: absolute;
+	top: 80%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-20;
+}
+.num-bar-10 {
+	position: absolute;
+	top: 90%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-10;
+}
+.num-bar-30 {
+	position: absolute;
+	top: 70%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-30;
+}
+.num-bar-40 {
+	position: absolute;
+	top: 60%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-40;
+}
+.num-bar-50 {
+	position: absolute;
+	top: 50%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-50;
+}
+.num-bar-60 {
+	position: absolute;
+	top: 40%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-60;
+}
+.num-bar-70 {
+	position: absolute;
+	top: 30%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-70;
+}
+.num-bar-80 {
+	position: absolute;
+	top: 20%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-80;
+}
+.num-bar-90 {
+	position: absolute;
+	top: 10%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-90;
+}
+.num-bar-100 {
+	position: absolute;
+	top: 0%;
+	left: -25%;
+	width: 160%;
+	height: 1%;
+	background: $num-100;
+}
+
+
+.graph-1 {
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	width: 12%;
+	height: 30%;
+	background: $graph-1; //30%
+
+	animation: graph-1 3s 1;
+}
+
+.graph-3 {
+	position: absolute;
+	top: 20%;
+	left: 39%;
+	width: 12%;
+	height: 80%;
+	background: $graph-3; //80%
+
+	animation: graph-3 8s 1;
+}
+.graph-4 {
+	position: absolute;
+	top: 0%;
+	left: 56%;
+	width: 12%;
+	height: 100%;
+	background: $graph-4; //100%
+
+	animation: graph-4 10s 1;
+}
+
+
+
+.line-0 {
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	width: 95%;
+	height: 1%;
+	background: $color-letter;
+}
+
+.line-30 {
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	width: 79%;
+	height: 1%;
+	background: $color-letter; //30%
+
+	animation: line30 3s 1;
+}
+
+.line-80 {
+	position: absolute;
+	top: 20%;
+	left: 39%;
+	width: 60%;
+	height: 1%;
+	background: $color-letter; //80%
+
+	animation: line80 8s 1;
+}
+.line-100 {
+	position: absolute;
+	top: 0%;
+	left: 56%;
+	width: 43%;
+	height: 1%;
+	background: $color-letter; //100%
+
+	animation: line100 10s 1;
+}
