@@ -37,3 +37,27 @@ $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+
+$bg-color: rgba(255,205,210 ,1);
+$black: #000;
+$white: #fff;
+
+$graph-1: linear-gradient(180deg, $color-tertiary-light 0%, $color-tertiary-dark 100%); //30%
+
+$graph-3:linear-gradient(180deg, $color-primary-light 0%, $color-primary-dark 100%); //80%
+$graph-4:linear-gradient(180deg, $color-red-light 0%, $color-red-dark 100%); //100%
+
+
+$color-letter: rgba(136,14,79 ,0.9);
+
+$num-10: rgba(224,247,250 ,1);
+$num-20: rgba(178,235,242 ,1);
+$num-30: rgba(128,222,234 ,1);
+$num-40: rgba(77,208,225 ,1);
+$num-50: rgba(38,198,218 ,1);
+$num-60: rgba(0,188,212 ,1);
+$num-70: rgba(0,172,193 ,1);
+$num-80: rgba(0,151,167 ,1);
+$num-90: rgba(0,131,143 ,1);
+$num-100: rgba(0,96,100 ,1);
