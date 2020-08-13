@@ -937,6 +937,12 @@ body {
   font-weight: 700;
   text-transform: uppercase; }
 
+.heading-tertiary_lead {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
