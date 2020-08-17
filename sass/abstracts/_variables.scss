@@ -9,6 +9,9 @@ $color-secondary-dark: #ff7730;
 $color-red-light: #ff7700;
 $color-red-dark: #ff0000;
 
+$color-yellow-light: #fffd7e;
+$color-yellow-dark : #fcf803;
+
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
@@ -45,7 +48,7 @@ $white: #fff;
 
 $graph-1: linear-gradient(180deg, $color-tertiary-light 0%, $color-tertiary-dark 100%); //30%
 
-$graph-3:linear-gradient(180deg, $color-primary-light 0%, $color-primary-dark 100%); //80%
+$graph-3:linear-gradient(180deg, $color-yellow-dark 0%, $color-yellow-light 100%); //80%
 $graph-4:linear-gradient(180deg, $color-red-light 0%, $color-red-dark 100%); //100%
 
 
