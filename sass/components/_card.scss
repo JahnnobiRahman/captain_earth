@@ -61,8 +61,17 @@
         border-top-right-radius: 25px;
         
         &--1 {
+<<<<<<< HEAD
             background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
             url(../img/lovefront2.jpg);
+=======
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
+<<<<<<< HEAD
+            url(../img/actofLove.jpg);
+=======
+            url(../img/lovefront.jpeg);
+>>>>>>> 50aaf021ff935c8533b702c3515e387db565d860
+>>>>>>> 265bad979517a3a190c201408fe0e06eaeebaacf
         }
 
         &--2 {
