@@ -61,17 +61,17 @@
         border-top-right-radius: 25px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
             url(../img/lovefront2.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
             url(../img/help.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
             url(../img/leaderfront.jpeg);
         }
     }
