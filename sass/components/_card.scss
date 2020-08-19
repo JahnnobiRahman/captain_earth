@@ -15,7 +15,7 @@
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: 25px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
@@ -27,7 +27,7 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark);
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
             }
 
             &-2 {
@@ -57,11 +57,11 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-red-light, $color-red-dark), 
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
             url(../img/actofLove.jpg);
         }
 
@@ -171,7 +171,7 @@
             only screen and (hover: none) {
 
         height: auto;
-        border-radius: 3px;
+        border-radius: 25px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         
