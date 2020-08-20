@@ -55,32 +55,24 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: ellipse(100% 80% at 20% 20%);
+        clip-path: ellipse(100% 80% at 20% 20%);
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         
         &--1 {
-<<<<<<< HEAD
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
-            url(../img/lovefront2.jpg);
-=======
+
             background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
-<<<<<<< HEAD
-            url(../img/actofLove.jpg);
-=======
-            url(../img/lovefront.jpeg);
->>>>>>> 50aaf021ff935c8533b702c3515e387db565d860
->>>>>>> 265bad979517a3a190c201408fe0e06eaeebaacf
+            url(../img/lovefront2.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
             url(../img/help.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.6), rgba($color-primary-dark ,.6)), 
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
             url(../img/leaderfront.jpeg);
         }
     }
@@ -98,7 +90,45 @@
     
     }
 
+    &__heading_level {
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 2rem;
+        right: 24rem;
+        width: 75%;
+    
+    }
+
     &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        border-radius: 20px;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-red-light, .85), 
+            rgba($color-red-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-yellow-light, .85), 
+            rgba($color-yellow-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-tertiary-light, .85), 
+            rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    &__heading_level-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
@@ -184,6 +214,19 @@
         border-radius: 25px;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &__heading_level {
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: right;
+            color: $color-white;
+            position: absolute;
+            top: 2rem;
+            right: 33rem;
+            width: 75%;
+        
+        }
         
         &__side {
             height: auto;
