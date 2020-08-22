@@ -847,7 +847,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 5rem; } }
+        font-size: 5rem; } }
   .heading-primary--sub {
     color: #000;
     display: block;
@@ -859,7 +859,8 @@ body {
     font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: 1rem; } }
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--task_aol {
     display: inline-block;
     font-size: 6rem;
@@ -1016,6 +1017,9 @@ body {
   font-weight: bolder;
   border: none;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 1.5rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -1034,6 +1038,9 @@ body {
   color: #000; }
   .btn--white::after {
     background-color: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .btn--white {
+      font-size: 1.5rem; } }
 
 .btn--green {
   background-color: #55c57a;

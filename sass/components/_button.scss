@@ -17,6 +17,10 @@
         //Change for the <button> element
         border: none;
         cursor: pointer;
+
+        @include respond(phone) {
+            font-size: 1.5rem;
+        }
     }
     
     &:hover {
@@ -42,6 +46,10 @@
 
         &::after {
             background-color: $color-white;
+        }
+
+        @include respond(phone) {
+            font-size: 1.5rem;
         }
     }
 
