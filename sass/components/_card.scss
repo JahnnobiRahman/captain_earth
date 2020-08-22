@@ -27,15 +27,15 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-color: $color-primary;
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-color: $color-primary;
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+                background-color: $color-primary;
             }
         }
     }
@@ -55,24 +55,28 @@
         background-size: cover;
         height: 23rem;
         background-blend-mode: screen;
-        -webkit-clip-path: ellipse(100% 80% at 20% 20%);
-        clip-path: ellipse(100% 80% at 20% 20%);
+       
+        -webkit-clip-path:  polygon(0 0, 100% 0, 100% 75%, 0 96%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 96%);
+       /* -webkit-clip-path: ellipse(100% 80% at 20% 20%);
+        clip-path: ellipse(100% 80% at 20% 20%); */
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
+      
         
         &--1 {
 
-            background-color: $color-primary-dark;
+            background-color: $color-primary;
+            border-bottom-right-radius: 25px;
+            
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
-            url(../img/help.jpg);
+            background-color: $color-primary;
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
-            url(../img/leaderfront.jpeg);
+            background-color: $color-primary;
         }
     }
 
@@ -94,6 +98,7 @@
         font-weight: 400;
         text-transform: uppercase;
         text-align: right;
+        
         color: $color-white;
         position: absolute;
         top: 2rem;
@@ -122,10 +127,13 @@
     }
 
     &__heading_level-span {
-        padding: 1rem 1.5rem;
+        padding: .5rem 4rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         border-radius: 20px;
+        color:#fff;
+        font-size: 2rem;
+        font-weight: bolder;
 
         &--1 {
             background-color: $color-red-main;
@@ -158,6 +166,20 @@
                 }
             }
         }
+            heading_level {
+                font-size: 2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: right;
+                color: $color-white;
+                position: absolute;
+                top: 2rem;
+                right: 33rem;
+                width: 75%;
+            
+            }
+            
+        
     }
 
     // FRONT SIDE STYLING
@@ -202,19 +224,7 @@
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-        &__heading_level {
-            font-size: 2rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-align: right;
-            color: $color-white;
-            position: absolute;
-            top: 2rem;
-            right: 33rem;
-            width: 75%;
-        
-        }
-        
+      
         &__side {
             height: auto;
             position: relative;

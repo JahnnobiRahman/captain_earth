@@ -1015,6 +1015,9 @@ body {
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
+.u-margin-top-small {
+  margin-top: 1.7rem !important; }
+
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
@@ -1133,11 +1136,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-color: #55c57a; }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-color: #55c57a; }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+        background-color: #55c57a; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -1146,16 +1149,19 @@ body {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    -webkit-clip-path: ellipse(100% 80% at 20% 20%);
-    clip-path: ellipse(100% 80% at 20% 20%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 96%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 96%);
+    /* -webkit-clip-path: ellipse(100% 80% at 20% 20%);
+        clip-path: ellipse(100% 80% at 20% 20%); */
     border-top-left-radius: 25px;
     border-top-right-radius: 25px; }
     .card__picture--1 {
-      background-color: #28b485; }
+      background-color: #55c57a;
+      border-bottom-right-radius: 25px; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url(../img/help.jpg); }
+      background-color: #55c57a; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url(../img/leaderfront.jpeg); }
+      background-color: #55c57a; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 400;
@@ -1188,10 +1194,13 @@ body {
     .card__heading-span--3 {
       background-color: #19b5fe; }
   .card__heading_level-span {
-    padding: 1rem 1.5rem;
+    padding: .5rem 4rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    border-radius: 20px; }
+    border-radius: 20px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder; }
     .card__heading_level-span--1 {
       background-color: #f62459; }
     .card__heading_level-span--2 {
@@ -1210,6 +1219,16 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+    .card__details heading_level {
+      font-size: 2rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: right;
+      color: #fff;
+      position: absolute;
+      top: 2rem;
+      right: 33rem;
+      width: 75%; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -1235,16 +1254,6 @@ body {
       border-radius: 25px;
       background-color: #fff;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .card__heading_level {
-        font-size: 2rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-align: right;
-        color: #fff;
-        position: absolute;
-        top: 2rem;
-        right: 33rem;
-        width: 75%; }
       .card__side {
         height: auto;
         position: relative;
@@ -1875,7 +1884,7 @@ body {
 
 .section-features {
   padding: 18rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hat2.gif);
+  background-color: #55c57a;
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -8rem; }
@@ -1941,11 +1950,33 @@ body {
     .section-task {
       margin-top: -1vh; } }
 
-.profile__pic {
-  width: 20%;
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  height: 6rem;
-  padding: 1rem;
-  margin: auto; }
+.profile {
+  height: 85vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/cool.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .profile {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .profile {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/ehero.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+  .profile__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .profile__logo {
+    height: 6rem; }
+  .profile__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }

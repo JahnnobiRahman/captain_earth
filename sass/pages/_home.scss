@@ -10,11 +10,8 @@
 
 .section-features {
     padding: 18rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../img/hat2.gif);
+    background-color:$color-primary;
+    
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -8rem;
