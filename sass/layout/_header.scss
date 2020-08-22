@@ -35,11 +35,15 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
-        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        
+        /*clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);*/
     }
 
     &__logo {
-        height: 6rem;
+        width: 7%;
+        @include respond(phone) {
+           width: 14%;
+        }
     }
     
     &__text-box {
@@ -92,11 +96,11 @@
         position: absolute;
         top: 4rem;
         left: 4rem;
-        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        /*clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);*/
     }
 
     &__logo {
-        height: 6rem;
+        width: 7%;
     }
     
     &__text-box {
