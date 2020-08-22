@@ -1941,11 +1941,39 @@ body {
     .section-task {
       margin-top: -1vh; } }
 
-.profile__pic {
-  width: 20%;
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-  height: 6rem;
-  padding: 1rem;
-  margin: auto; }
+.profile {
+  height: 85vh;
+  background-color: #55c57a;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .profile {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      height: 95vh; } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .profile {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/ehero.jpg); } }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+  .profile__pic {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: center; }
+  .profile__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .profile__logo {
+    height: 6rem; }
+  .profile__text-box {
+    font-size: 1rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
