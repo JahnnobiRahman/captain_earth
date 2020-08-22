@@ -806,8 +806,17 @@ body {
   background: rgba(136, 14, 79, 0.9);
   animation: line100 10s 1; }
 
+@font-face {
+  font-family: 'Trade Gothic LT Bold';
+  font-weight: bold;
+  src: local("Trade Gothic LT Bold"), url("../fonts/Trade Gothic LT Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'NexaRustSlab-BlackShadow01';
+  src: local("NexaRustSlab-BlackShadow01"), url("../fonts/NexaRustSlab-BlackShadow01.otf") format("opentype"); }
+
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Trade Gothic LT Bold', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
@@ -816,13 +825,16 @@ body {
 .heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
   .heading-primary--main {
-    color: #fff;
+    color: #000;
     display: block;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    font-weight: bolder;
+    letter-spacing: .5rem;
+    font-family: 'NexaRustSlab-BlackShadow01',sans-serif;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -834,6 +846,18 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-family: 5rem; } }
+  .heading-primary--sub {
+    color: #000;
+    display: block;
+    font-size: 10rem;
+    font-weight: 700;
+    font-weight: bolder;
+    letter-spacing: .5rem;
+    animation: moveInRight 1s ease-out;
+    font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: 1rem; } }
   .heading-primary--task_aol {
     display: inline-block;
     font-size: 6rem;
@@ -856,7 +880,7 @@ body {
   .heading-primary--task_gw {
     display: inline-block;
     font-size: 6rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -910,16 +934,6 @@ body {
     @media only screen and (max-width: 56.25em) {
       .heading-primary--task_lead {
         font-size: 3rem; } }
-  .heading-primary--sub {
-    color: #fff;
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.5rem;
-    animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: .5rem; } }
   .heading-primary--sub_task {
     display: block;
     font-size: 2rem;
@@ -933,6 +947,7 @@ body {
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
+  font-family: 'NexaRustSlab-BlackShadow01',sans-serif;
   font-weight: 400;
   display: inline-block;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -1023,6 +1038,8 @@ body {
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
+  font-family: 'NexaRustSlab-BlackShadow01',sans-serif;
+  font-weight: bolder;
   border: none;
   cursor: pointer; }
 
@@ -1040,7 +1057,7 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #777; }
+  color: #000; }
   .btn--white::after {
     background-color: #fff; }
 
@@ -1707,13 +1724,13 @@ body {
   display: none; }
 
 .navigation__button {
-  background-color: #fff;
+  /*background-color: $color-white; */
   height: 7rem;
   width: 7rem;
   position: fixed;
   top: 6rem;
   right: 6rem;
-  border-radius: 50%;
+  /*border-radius: 50%; */
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1730,7 +1747,7 @@ body {
 .navigation__background {
   height: 6rem;
   width: 6rem;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
@@ -1801,7 +1818,7 @@ body {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
-    background-color: #333;
+    background-color: #fff;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
