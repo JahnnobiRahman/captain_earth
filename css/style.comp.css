@@ -367,6 +367,7 @@ body {
 
 @font-face {
   font-family: 'NexaRustSlab-BlackShadow01';
+  font-weight: bold;
   src: local("NexaRustSlab-BlackShadow01"), url("./fonts/NexaRustSlab-BlackShadow01.otf") format("opentype"); }
 
 body {
@@ -378,6 +379,7 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
+  line-height: 1;
   backface-visibility: hidden;
   margin-bottom: 6rem;
   font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
@@ -1211,6 +1213,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.emblem {
+  padding: 1rem;
+  height: 40%;
+  width: 15%; }
 
 .navigation__checkbox {
   display: none; }
