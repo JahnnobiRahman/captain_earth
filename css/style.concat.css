@@ -1905,3 +1905,12 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-task {
       margin-top: -1vh; } }
+
+.profile__pic {
+  width: 20%;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  height: 6rem;
+  padding: 1rem;
+  margin: auto; }
