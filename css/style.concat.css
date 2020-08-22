@@ -1980,11 +1980,7 @@ body {
 
 .profile {
   height: 85vh;
-<<<<<<< HEAD
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/cool.jpg);
-=======
   background-color: #55c57a;
->>>>>>> acd9df567b29eb720cd495695c12d08a23fd24cf
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -2000,8 +1996,6 @@ body {
     .profile {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
-<<<<<<< HEAD
-=======
   .profile__pic-box {
     position: relative;
     text-align: center;
@@ -2010,7 +2004,6 @@ body {
   .profile__pic {
     height: 30vh;
     clip-path: circle(50% at 50% 50%); }
->>>>>>> acd9df567b29eb720cd495695c12d08a23fd24cf
   .profile__logo-box {
     position: absolute;
     top: 4rem;
@@ -2018,14 +2011,9 @@ body {
   .profile__logo {
     height: 6rem; }
   .profile__text-box {
-<<<<<<< HEAD
-    position: absolute;
-    top: 40%;
-=======
     font-size: 1rem;
     position: absolute;
     top: 55%;
->>>>>>> acd9df567b29eb720cd495695c12d08a23fd24cf
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
