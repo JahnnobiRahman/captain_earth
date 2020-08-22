@@ -5,7 +5,7 @@
   
   src:
   local('Trade Gothic LT Bold'),
-  url('../fonts/Trade Gothic LT Bold.ttf') format('truetype');
+  url('./fonts/Trade Gothic LT Bold.ttf') format('truetype');
 
 }
 
@@ -15,7 +15,7 @@
     
     src:
     local('NexaRustSlab-BlackShadow01'),
-    url('../fonts/NexaRustSlab-BlackShadow01.otf') format('opentype');
+    url('./fonts/NexaRustSlab-BlackShadow01.otf') format('opentype');
   
   }
 
@@ -30,9 +30,9 @@ body {
 .heading-primary {
     
     text-transform: uppercase;
-
+    line-height: 1;
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     font-family: 'NexaRustSlab-BlackShadow01',sans-serif;
 
     &--main {
@@ -49,7 +49,7 @@ body {
         
         @include respond(phone) {
             letter-spacing: 1rem;
-            font-family: 5rem;
+            font-size: 5rem;
         }
         /*
         animation-delay: 3s;
@@ -69,6 +69,7 @@ body {
 
         @include respond(phone) {
             letter-spacing: 1rem;
+            font-size: 5rem;
         }
     }
 
