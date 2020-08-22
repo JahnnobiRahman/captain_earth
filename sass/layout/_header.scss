@@ -1,10 +1,8 @@
 .header {
     height: 85vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../img/cool.jpg);
+    background-color: 
+        /*rgba($color-primary-light, 0.8),*/
+        $color-primary;
     background-size: cover;
     background-position: center;
     position: relative;

@@ -827,7 +827,7 @@ body {
   text-transform: uppercase;
   line-height: 1;
   backface-visibility: hidden;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
   .heading-primary--main {
     color: #000;
@@ -1605,7 +1605,7 @@ body {
 
 .header {
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/cool.jpg);
+  background-color: #55c57a;
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -1706,8 +1706,7 @@ body {
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485);
-  z-index: 1000;
+  z-index: 1500;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
@@ -1732,6 +1731,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  background-color: #55c57a;
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
@@ -1743,6 +1743,7 @@ body {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
+  background-color: #55c57a;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
@@ -1773,7 +1774,7 @@ body {
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 3rem;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     display: inline-block; }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
