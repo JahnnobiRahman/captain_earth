@@ -679,7 +679,7 @@ body {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url(../img/lovefront2.jpg); }
+      background-color: #28b485; }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url(../img/help.jpg); }
     .card__picture--3 {
@@ -710,22 +710,22 @@ body {
     box-decoration-break: clone;
     border-radius: 20px; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 119, 0, 0.85), rgba(255, 0, 0, 0.85)); }
+      background-color: #f62459; }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(254, 204, 81, 0.85), rgba(252, 176, 51, 0.85)); }
+      background-color: #f7ca18; }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-color: #19b5fe; }
   .card__heading_level-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     border-radius: 20px; }
     .card__heading_level-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 119, 0, 0.85), rgba(255, 0, 0, 0.85)); }
+      background-color: #f62459; }
     .card__heading_level-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(254, 204, 81, 0.85), rgba(252, 176, 51, 0.85)); }
+      background-color: #f7ca18; }
     .card__heading_level-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-color: #19b5fe; }
   .card__details {
     padding: 3rem; }
     .card__details ul {

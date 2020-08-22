@@ -62,8 +62,7 @@
         
         &--1 {
 
-            background-image: linear-gradient(to right bottom, rgba($color-primary-light ,.4), rgba($color-primary-dark ,.4)), 
-            url(../img/lovefront2.jpg);
+            background-color: $color-primary-dark;
         }
 
         &--2 {
@@ -110,21 +109,15 @@
         border-radius: 20px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-red-light, .85), 
-            rgba($color-red-dark, .85));
+            background-color: $color-red-main;
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-yellow-light, .85), 
-            rgba($color-yellow-dark, .85));
+            background-color: $color-yellow-main;
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85));
+            background-color: $color-tertiary-main;
         }
     }
 
@@ -135,21 +128,15 @@
         border-radius: 20px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-red-light, .85), 
-            rgba($color-red-dark, .85));
+            background-color: $color-red-main;
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-yellow-light, .85), 
-            rgba($color-yellow-dark, .85));
+            background-color: $color-yellow-main;
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, 
-            rgba($color-tertiary-light, .85), 
-            rgba($color-tertiary-dark, .85));
+            background-color: $color-tertiary-main;
         }
     }
 
