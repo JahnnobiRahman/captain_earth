@@ -1618,9 +1618,12 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
+    /*clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);*/ }
   .header__logo {
-    height: 6rem; }
+    width: 7%; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        width: 14%; } }
   .header__text-box {
     position: absolute;
     top: 45%;
@@ -1650,9 +1653,9 @@ body {
     position: absolute;
     top: 4rem;
     left: 4rem;
-    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
+    /*clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);*/ }
   .taskheader__aol__logo {
-    height: 6rem; }
+    width: 7%; }
   .taskheader__aol__text-box {
     position: absolute;
     top: 48%;
