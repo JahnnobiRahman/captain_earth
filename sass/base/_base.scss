@@ -38,11 +38,15 @@ body {
 }
 
 
-
+.panel-default{
+	border-radius: 25px;
+	background-color: $color-primary;
+}
 
 .table-latitude {
     width: 100%;
-    font-size: 1.5rem;
+	font-size: 2rem;
+	color: whitesmoke;
     caption {
         text-transform: uppercase;
         font-weight: bold;
@@ -63,7 +67,7 @@ body {
     tbody {
         tr {
             border-bottom: 1px solid #F1F1F1;
-            color: $lfs-grey;
+            
             text-align: center;
             td {
                 padding: 10px;

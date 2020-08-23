@@ -592,9 +592,14 @@ body {
   background-color: #55c57a;
   color: #fff; }
 
+.panel-default {
+  border-radius: 25px;
+  background-color: #55c57a; }
+
 .table-latitude {
   width: 100%;
-  font-size: 1.5rem; }
+  font-size: 2rem;
+  color: whitesmoke; }
   .table-latitude caption {
     text-transform: uppercase;
     font-weight: bold;
@@ -611,7 +616,6 @@ body {
       border: 1px solid #F1F1F1; }
   .table-latitude tbody tr {
     border-bottom: 1px solid #F1F1F1;
-    color: #75787b;
     text-align: center; }
     .table-latitude tbody tr td {
       padding: 10px;
@@ -1139,6 +1143,25 @@ body {
   transform: translateY(-2px); }
 
 .btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.btn-lead:link, .btn-lead:visited {
+  font-size: 2rem;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-lead:hover {
+  background-color: white;
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-lead:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
