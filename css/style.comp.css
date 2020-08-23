@@ -1385,12 +1385,11 @@ body {
 .navigation__background {
   height: 6rem;
   width: 6rem;
-  background-color: transparent;
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
-  opacity: 0;
-  z-index: 1500;
+  background-color: #55c57a;
+  z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 56.25em) {
     .navigation__background {
@@ -1427,7 +1426,7 @@ body {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
-  background-color: #55c57a;
+  /* background-color:$color-primary;*/
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
