@@ -1625,8 +1625,8 @@ body {
     .footer__logo-box:hover {
       animation: bounce-out 2s; }
   .footer__logo {
-    width: 15rem;
-    height: auto; }
+    width: 1rem;
+    height: 1rem; }
   .footer__navigation {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -1939,7 +1939,7 @@ body {
 
 .section-book {
   padding: 15rem 0;
-  background-color: #55c57a; }
+  background-color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
     .section-book {
       padding: 10rem 0; } }
