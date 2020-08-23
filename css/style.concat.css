@@ -810,6 +810,57 @@ body {
   background: rgba(136, 14, 79, 0.9);
   animation: line100 10s 1; }
 
+.container {
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.responsive-table {
+  /*.col-4 {
+	  flex-basis: 25%;
+	}*/ }
+  .responsive-table li {
+    border-radius: 25px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-family: 'Trade Gothic LT Bold'; }
+  .responsive-table .table-header {
+    background-color: #55c57a;
+    color: #ffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: 'NexaRustSlab-BlackShadow01',sans-serif; }
+  .responsive-table .table-row {
+    background-color: #ffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1); }
+  .responsive-table .col-1 {
+    flex-basis: 30%; }
+  .responsive-table .col-2 {
+    flex-basis: 40%; }
+  .responsive-table .col-3 {
+    flex-basis: 30%; }
+  @media all and (max-width: 767px) {
+    .responsive-table .table-header {
+      display: none; }
+    .responsive-table li {
+      display: block; }
+    .responsive-table .col {
+      flex-basis: 100%; }
+    .responsive-table .col {
+      display: flex;
+      padding: 10px 0; }
+      .responsive-table .col:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right; } }
+
 @font-face {
   font-family: 'Trade Gothic LT Bold';
   font-weight: bold;
