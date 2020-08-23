@@ -6,8 +6,9 @@
     border-radius: 3px;
     padding: 9rem;
     padding-left: 11rem;
+    border-radius: 20rem;
     font-size: $default-font-size;
-    transform: skewX(-12deg);
+   /* transform: skewX(-12deg);*/
 
     @include respond(tab-port) {
         width: 100%;
