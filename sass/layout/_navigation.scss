@@ -1,19 +1,21 @@
+
 .navigation {
     &__checkbox {
         display: none;
+       
     }
 
     &__button {
-         /*background-color: $color-white; */
+       /* background-color: $color-white; */
         height: 7rem;
         width: 7rem;
         position: fixed;
         top: 6rem;
         right: 6rem;
-        /*border-radius: 50%; */
+       
         z-index: 2000;
         
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        /*box-shadow: 0 1rem 3rem rgba($color-black, .1);  */
         text-align: center;
         cursor: pointer;
 
@@ -31,11 +33,11 @@
     &__background {
         height: 6rem;
         width: 6rem;
-       /* border-radius: 50%; */
+        background-color: transparent;
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-      
+       opacity : 0;
         z-index: 1500;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -166,3 +168,5 @@
         transform: rotate(-135deg);
     }
 }
+
+
