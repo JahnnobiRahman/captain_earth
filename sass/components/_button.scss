@@ -111,18 +111,18 @@
     &:link,
     &:visited {
         font-size: $default-font-size;
-        color: white;
+        color: $color-primary;
         display: inline-block;
         text-decoration: none;
-        border-bottom: 1px solid white;
-        padding: 3px;
+        border-radius: 15px;
+        padding: 4px;
         transition: all .2s;
         font-family: 'NexaRustSlab-BlackShadow01',sans-serif;
     }
 
     &:hover {
-        background-color: white;
-        color: $color-primary;
+        background-color: $color-primary;
+        color: $color-white;
         box-shadow: 0 1rem 2rem rgba($color-black, .15);
         transform: translateY(-2px);
     }
