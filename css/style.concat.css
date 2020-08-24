@@ -2100,10 +2100,12 @@ body {
     position: relative;
     text-align: center;
     margin-bottom: 2rem;
-    padding: 3rem; }
+    padding: 2rem; }
   .profile__pic {
     height: 30vh;
     clip-path: circle(50% at 50% 50%); }
+  .profile__main {
+    height: 45vh; }
   .profile__logo-box {
     position: absolute;
     top: 4rem;

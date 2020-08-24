@@ -31,13 +31,16 @@
         position: relative;
         text-align: center;
         margin-bottom: 2rem;
-        padding: 3rem;
+        padding: 2rem;
         
     }
 
     &__pic {
         height: 30vh;
         clip-path: circle(50% at 50% 50%); 
+    }
+    &__main{
+        height: 45vh;
     }
 
     &__logo-box {
