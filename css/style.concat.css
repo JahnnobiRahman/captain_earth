@@ -2105,7 +2105,8 @@ body {
     height: 30vh;
     clip-path: circle(50% at 50% 50%); }
   .profile__main {
-    height: 45vh; }
+    height: 45vh;
+    animation: bounce-out 2s; }
   .profile__logo-box {
     position: absolute;
     top: 4rem;
