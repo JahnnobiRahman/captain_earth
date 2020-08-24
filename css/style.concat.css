@@ -2117,3 +2117,44 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.newsfeed {
+  height: 13vh;
+  margin-top: 2rem;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .newsfeed {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/ehero.jpg); } }
+  .newsfeed__pic-box {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 3rem; }
+  .newsfeed__pic {
+    height: 30vh;
+    clip-path: circle(50% at 50% 50%); }
+  .newsfeed__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+  .newsfeed__logo {
+    height: 5rem; }
+  .newsfeed__text-box {
+    font-size: 1rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.feed_container {
+  max-width: 90%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
