@@ -1720,17 +1720,20 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
   .feed_container .row .sidenav {
-    position: fixed;
+    /*
+    transform: translateX(-245px);
+    transition: all .6s ease-in-out;
+    z-index: 2;
     grid-area: sidenav;
-    height: 100%;
+    
+    */
+    position: absolute;
+    width: inherit;
+    height: 500px;
     overflow-y: auto;
     background-color: #394263;
     color: #FFF;
-    width: 240px;
-    transform: translateX(-245px);
-    transition: all .6s ease-in-out;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    z-index: 2; }
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
     .feed_container .row .sidenav__brand {
       position: relative;
       display: flex;
