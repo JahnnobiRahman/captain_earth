@@ -61,95 +61,24 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 10px;
-	padding-right: 10px;
-  
-.row{
-
-  
-  .sidenav {
-    /*
-    transform: translateX(-245px);
-    transition: all .6s ease-in-out;
-    z-index: 2;
-    grid-area: sidenav;
-    
-    */
-     // Access sidenav at any scroll position; relatively positioned on medium + screens
-    position: absolute;
-    width: inherit;
-    height: 500px;
-    overflow-y: auto;
-    background-color: $color-fiord;
-    color: $color-white;
-    
-    
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    // Needs to sit above the hamburger menu icon
-
-
-
-    &__brand {
-        position: relative;
-        display: flex;
-        align-items: center;
-        padding: 0 16px;
-        height: $height-header;
-        background-color: rgba(0, 0, 0, .15);
-
-  &-icon {
-    margin-top: 2px;
-    font-size: 14px;
-    color: $color-transparent;
-  }
-
-  &-close {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    visibility: visible;
-    color: $color-transparent;
-    cursor: pointer;
-  }
-
-  &-link {
-    font-size: 18px;
-    font-weight: bold;
-    color: $color-white;
-    margin: 0 15px;
-    letter-spacing: 1.5px;
-  }
-
+    padding-right: 10px;
 }
+  
 
-&__profile {
+.content {
     display: flex;
-    align-items: center;
-    min-height: 90px;
-    background-color: rgba(255, 255, 255, .1);
 
-    &-avatar {
-      @include profile-avatar;
-      height: 64px;
-      width: 64px;
-      margin: 0 15px;
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
     }
-
-    &-title {
-      font-size: 17px;
-      letter-spacing: 1px;
-    }
-  }
-
-
-
-
-
-
-
-
 }
 
-  }
+.sidebar {
+    background-color: var(--color-grey-light-3);
 
+    flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-

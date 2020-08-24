@@ -72,21 +72,28 @@ $num-100: rgba(0,96,100 ,1);
 
 
 
-$color-fiord: #394263; // sidenav bg & dark text
-$color-white: #FFF; // card bg
-$color-athens-gray: #EAEDF1; // content bg
-$color-catskill-white: #F9FAFC; // top nav bg
-$color-abbey: #777; // gray text
-$color-mischka: #DADAE3; // light gray for menu icon
-$color-java: #1BBAE1; // blue text
-$color-mine-shaft: #333; // main section header bg
-$color-zest: #e67e22; // document icon bg
-$color-jungle-green: #27ae60; // calendar icon bg
-$color-cinnabar: #e74c3c; // main icon bg, red
-$color-amethyst: #af64cc; // main photo icon bg
-$color-transparent: rgba(255, 255, 255, .5);
-$color-alto: #D3D3D3;
+:root {
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
 
-$height-header: 50px;
-$height-footer: 50px;
-$width-sidenav: 240px;
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px

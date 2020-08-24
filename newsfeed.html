@@ -45,73 +45,60 @@
 
         <main>
             <div class="feed_container">
-                <div class="row">
+               
                     
-                    
-                    <div class="col-1-of-4">
-                        col 1 of 4
-                        <div class="sidenav">
-                            hello
-                        </div>
-                        <!--
-                            <div class="sidenav">
-                              <div class="sidenav__brand">
-                                <i class="fas fa-feather-alt sidenav__brand-icon"></i>
-                                <a class="sidenav__brand-link" href="#">Ux<span class="text-light">Pro</span></a>
-                                <i class="fas fa-times sidenav__brand-close"></i>
-                              </div>
-                              <div class="sidenav__profile">
-                                <div class="sidenav__profile-avatar"></div>
-                                <div class="sidenav__profile-title text-light">Matthew H</div>
-                              </div>
-                              <div class="row row--align-v-center row--align-h-center">
-                                <ul class="navList">
-                                  
-                                    <li>
-                                    <div class="navList__subheading row row--align-v-center">
-                                      <span class="navList__subheading-icon"><i class="fas fa-briefcase-medical"></i></span>
-                                      <span class="navList__subheading-title">Trending</span>
-                                    </div>
-                                    <ul class="subList subList--hidden">
-                                      <li class="subList__item">Acts of Love</li>
-                                      <li class="subList__item">Goodwill</li>
-                                      <li class="subList__item">Leadership</li>
-                                    </ul>
-                                  </li>
-                                  <li>
-                                    <div class="navList__subheading row row--align-v-center">
-                                      <span class="navList__subheading-icon"><i class="fas fa-plane-departure"></i></span>
-                                      <span class="navList__subheading-title">Connect</span>
-                                    </div>
-                                    <ul class="subList subList--hidden">
-                                      <li class="subList__item">facebook</li>
-                                      <li class="subList__item">instagram</li>
-                                      <li class="subList__item">tiktok</li>
-                                      <li class="subList__item">likee</li>
-                                    </ul>
-                                  </li>
-                                 
-                          
-                                 
-                                  <li>
-                                    <div class="navList__subheading row row--align-v-center">
-                                      <span class="navList__subheading-icon"><i class="fas fa-eye"></i></span>
-                                      <span class="navList__subheading-title">Review</span>
-                                    </div>
-                                    <ul class="subList subList--hidden">
-                                      <li class="subList__item">Acts of love</li>
-                                      <li class="subList__item">Goodwill</li>
-                                      <li class="subList__item">Leadership</li>
-                                    </ul>
-                                  </li>
-                                
-                                </ul>
-                              </div>
-                    </div>
-                -->
-                </div>
+                    <div class="content">
+                        <nav class="sidebar">
+                            <ul class="side-nav">
+                                <li class="side-nav__item side-nav__item--active">
+                                    <a href="#" class="side-nav__link">
+                                        <svg class="side-nav__icon">
+                                            <use xlink:href="img/sprite.svg#icon-home"></use>
+                                        </svg>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="side-nav__item">
+                                    <a href="#" class="side-nav__link">
+                                        <svg class="side-nav__icon">
+                                            <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                        </svg>
+                                        <span>Acts of Love</span>
+                                    </a>
+                                </li>
+                                <li class="side-nav__item">
+                                    <a href="#" class="side-nav__link">
+                                        <svg class="side-nav__icon">
+                                            <use xlink:href="img/sprite.svg#icon-key"></use>
+                                        </svg>
+                                        <span>Goodwill</span>
+                                    </a>
+                                </li>
+                                <li class="side-nav__item">
+                                    <a href="#" class="side-nav__link">
+                                        <svg class="side-nav__icon">
+                                            <use xlink:href="img/sprite.svg#icon-map"></use>
+                                        </svg>
+                                        <span>Leadership</span>
+                                    </a>
+                                </li>
 
+                                <li class="side-nav__item">
+                                    <a href="#" class="side-nav__link">
+                                        <svg class="side-nav__icon">
+                                            <use xlink:href="img/sprite.svg#icon-map"></use>
+                                        </svg>
+                                        <span>Review</span>
+                                    </a>
+                                </li>
+                            </ul>
+        
+                            
+                        </nav>
+        
+        
 
+                <main class = "feed-view">
 
                     <div class="col-2-of-4" style="background-color: brown;"> 
                         hello 2 4 
@@ -120,13 +107,27 @@
                     <div class="col-1-of-4" style="background-color: burlywood;">
                         Col 1 of 4
                     </div>
-                </div>
+
+                <div class = "cta">
+                <footer class="footer">
+                    <div class="footer__logo-box">
+
+                        <picture class="footer__logo">
+                            <source srcset="img/Emblem.png 1x, img/Emblem.png 2x"
+                                    media="(max-width: 37.5em)">
+                            <img srcset="img/Emblem.png 1x, img/Emblem.png 2x" alt="Full logo" class="footer__logo" src="img/Emblem.png">
+        
+                        </picture> 
+                    </div>
+                </footer>
+            </div>  
             </div>
         </main>
 
     
 
-        <footer class="footer">
+       <!-----
+       <footer class="footer">
            
 
                 <div class="footer__logo-box">
@@ -164,67 +165,8 @@
                 </div>
             </div>
         </footer>
-
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/love1.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/love2.jpg" alt="Tour photo" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">ACTS OF LOVE</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Task 01</h3>
-                    <p class="popup__text">
-
-                        Feed fresh food to human or other living beings and take a snap of it here.
-                        <br>
-                        <b>Points : 75</b>
-                    </p>
-                    <a href="task01_aol.html" class="btn btn--green">PLAY!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="popup" id="popup1">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/will1.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/will2.jpg" alt="Tour photo" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">GOOD WILL</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Task 01</h3>
-                    <p class="popup__text">
-                        Complete a book in 7 days.
-                        <br>
-                        <b>Points : 50</b>
-                    </p>
-                    <a href="task01_goodwill.html" class="btn btn--green">PLAY!</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="popup" id="popup2">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/lead1.jpg" alt="Tour photo" class="popup__img">
-                    <img src="img/lead2.jpg" alt="Tour photo" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">LEADERSHIP</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Task 01</h3>
-                    <p class="popup__text">
-                        Work as a volunteer in humanitarian program.
-                        <br>
-                        <b>Points : 100</b>
-                    </p>
-                    <a href="task01_leader.html" class="btn btn--green">PLAY!</a>
-                </div>
-            </div>
-        </div>
+----> 
+        
 
        
         
