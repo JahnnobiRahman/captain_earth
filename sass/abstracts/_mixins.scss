@@ -47,3 +47,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 }
 
+
+
+@mixin profile-avatar {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1609106/headshot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .2);
+  }
+  
+  @mixin box-shadow {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+  

@@ -590,7 +590,7 @@ body {
 
 ::selection {
   background-color: #55c57a;
-  color: #fff; }
+  color: #FFF; }
 
 .panel-default {
   border-radius: 25px;
@@ -1154,17 +1154,17 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
-  background-color: #fff;
+  background-color: #FFF;
   color: #000; }
   .btn--white::after {
-    background-color: #fff; }
+    background-color: #FFF; }
   @media only screen and (max-width: 37.5em) {
     .btn--white {
       font-size: 1.5rem; } }
 
 .btn--green {
   background-color: #55c57a;
-  color: #fff; }
+  color: #FFF; }
   .btn--green::after {
     background-color: #55c57a; }
 
@@ -1196,7 +1196,7 @@ body {
 
 .btn-text:hover {
   background-color: #55c57a;
-  color: #fff;
+  color: #FFF;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -1216,7 +1216,7 @@ body {
 
 .btn-lead:hover {
   background-color: #55c57a;
-  color: #fff;
+  color: #FFF;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px); }
 
@@ -1242,7 +1242,7 @@ body {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
     .card__side--front {
-      background-color: #fff; }
+      background-color: #FFF; }
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
@@ -1278,7 +1278,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-align: right;
-    color: #fff;
+    color: #FFF;
     position: absolute;
     top: 10rem;
     right: 2rem;
@@ -1288,7 +1288,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-align: right;
-    color: #fff;
+    color: #FFF;
     position: absolute;
     top: 2rem;
     right: 24rem;
@@ -1336,7 +1336,7 @@ body {
       font-weight: 400;
       text-transform: uppercase;
       text-align: right;
-      color: #fff;
+      color: #FFF;
       position: absolute;
       top: 2rem;
       right: 33rem;
@@ -1350,7 +1350,7 @@ body {
     text-align: center; }
   .card__price-box {
     text-align: center;
-    color: #fff;
+    color: #FFF;
     margin-bottom: 8rem; }
   .card__price-only {
     font-size: 1.4rem;
@@ -1366,7 +1366,7 @@ body {
     .card {
       height: auto;
       border-radius: 25px;
-      background-color: #fff;
+      background-color: #FFF;
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card__side {
         height: auto;
@@ -1472,7 +1472,7 @@ body {
   color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
-  background-color: rbga(#fff, 0.5);
+  background-color: rbga(#FFF, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -1568,7 +1568,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    background-color: #fff;
+    background-color: #FFF;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
@@ -1681,7 +1681,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
-    color: #fff;
+    color: #FFF;
     text-transform: uppercase;
     font-size: 1.7rem;
     text-align: center;
@@ -1941,10 +1941,10 @@ body {
   background-color: #55c57a;
   font-weight: 300;
   padding: 1rem 2rem;
-  color: #fff;
+  color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #FFF 50%);
   background-size: 220%;
   transition: all .4s; }
   .navigation__link:link span, .navigation__link:visited span {
@@ -2165,3 +2165,56 @@ body {
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px; }
+  .feed_container .row .sidenav {
+    position: fixed;
+    grid-area: sidenav;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #394263;
+    color: #FFF;
+    width: 240px;
+    transform: translateX(-245px);
+    transition: all .6s ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 2; }
+    .feed_container .row .sidenav__brand {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.15); }
+      .feed_container .row .sidenav__brand-icon {
+        margin-top: 2px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5); }
+      .feed_container .row .sidenav__brand-close {
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        visibility: visible;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer; }
+      .feed_container .row .sidenav__brand-link {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FFF;
+        margin: 0 15px;
+        letter-spacing: 1.5px; }
+    .feed_container .row .sidenav__profile {
+      display: flex;
+      align-items: center;
+      min-height: 90px;
+      background-color: rgba(255, 255, 255, 0.1); }
+      .feed_container .row .sidenav__profile-avatar {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1609106/headshot.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        height: 64px;
+        width: 64px;
+        margin: 0 15px; }
+      .feed_container .row .sidenav__profile-title {
+        font-size: 17px;
+        letter-spacing: 1px; }
