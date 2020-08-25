@@ -1718,77 +1718,76 @@ body {
     .section-task {
       margin-top: -1vh; } }
 
-.profile .user {
-  display: flex;
-  align-items: center; }
-  .profile .user__image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-right: 15px; }
-  .profile .user__name {
-    width: 100%; }
-    .profile .user__name .name {
-      display: flex;
-      justify-content: space-between; }
-      .profile .user__name .name__main {
-        font-size: 55px !important;
-        color: #000;
-        line-height: 55px !important; }
-      .profile .user__name .name__point {
-        font-size: 50px !important;
-        line-height: 50px !important;
-        margin-right: 20px;
-        color: #55c57a; }
-        .profile .user__name .name__point span {
-          font-size: 16px !important;
-          margin-right: 7px;
+.profile {
+  width: 80%; }
+  .profile .user {
+    display: flex;
+    align-items: center; }
+    .profile .user__image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 15px; }
+    .profile .user__name {
+      width: 100%; }
+      .profile .user__name .name {
+        display: flex;
+        justify-content: space-between; }
+        .profile .user__name .name__main {
+          font-size: 55px !important;
+          color: #000;
+          line-height: 55px !important; }
+        .profile .user__name .name__point {
+          font-size: 50px !important;
+          line-height: 50px !important;
+          margin-right: 20px;
+          color: #55c57a; }
+          .profile .user__name .name__point span {
+            font-size: 16px !important;
+            margin-right: 7px;
+            color: #ccc; }
+      .profile .user__name p {
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 30px;
+        margin-bottom: 20px; }
+      .profile .user__name a {
+        font-size: 18px !important;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 2px solid #55c57a;
+        color: #55c57a;
+        transition: .2s; }
+      .profile .user__name a:hover {
+        color: #fff;
+        background: #55c57a; }
+  .profile__activity {
+    margin-top: 10px;
+    display: flex;
+    align-items: center; }
+    .profile__activity div {
+      margin-right: 25px; }
+      .profile__activity div h1 {
+        font-size: 25px; }
+        .profile__activity div h1 span {
+          font-size: 17px;
           color: #ccc; }
-    .profile .user__name p {
-      font-size: 30px;
-      font-weight: 100;
-      line-height: 30px;
-      margin-bottom: 20px; }
-    .profile .user__name a {
-      font-size: 18px !important;
-      text-decoration: none;
-      padding: 10px 30px;
-      border: 2px solid #55c57a;
-      color: #55c57a;
-      transition: .2s; }
-    .profile .user__name a:hover {
-      color: #fff;
-      background: #55c57a; }
-
-.profile__activity {
-  margin-top: 10px;
-  display: flex;
-  align-items: center; }
-  .profile__activity div {
-    margin-right: 25px; }
-    .profile__activity div h1 {
-      font-size: 25px; }
-      .profile__activity div h1 span {
-        font-size: 17px;
-        color: #ccc; }
-
-.profile__bio {
-  font-size: 18px;
-  letter-spacing: 1px; }
-
-.profile__upladedContent {
-  margin-top: 35px; }
-  .profile__upladedContent .collam {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding: 0 !important; }
-  .profile__upladedContent .content {
-    height: 200px;
-    padding: 5px;
-    margin-bottom: 20px;
-    transition: .4s; }
-  .profile__upladedContent .content:hover {
-    opacity: .5; }
+  .profile__bio {
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .profile__upladedContent {
+    margin-top: 35px; }
+    .profile__upladedContent .collam {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding: 0 !important; }
+    .profile__upladedContent .content {
+      height: 200px;
+      padding: 5px;
+      margin-bottom: 20px;
+      transition: .4s; }
+    .profile__upladedContent .content:hover {
+      opacity: .5; }
 
 .newsfeed {
   height: 13vh;
