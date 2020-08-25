@@ -1,73 +1,86 @@
-.profile {
-    height: 85vh;
-    background-color: $color-primary;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.profile{
     
-
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-        height: 95vh;
-    }
-
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-            only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-            only screen and (min-width: 125em) {
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url(../img/ehero.jpg);
-    }
-
-    @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-    }
-
-    &__pic-box{
-        position: relative;
-        text-align: center;
-        margin-bottom: 2rem;
-        padding: 2rem;
-        
-    }
-
-    &__pic {
-        height: 30vh;
-        clip-path: circle(50% at 50% 50%); 
-    }
-
-    &__main{
-        height: 45vh;
-        animation: bounce-out 2s;
-        @include respond(tab-port) {
-            width:100%;
-            height: 100%;
+    .user{
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        &__image{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        &__name{
+            width: 100%;
+            .name{
+                display: flex; justify-content: space-between;
+                &__main{
+                    font-size: 55px !important; color: #000;
+                    line-height: 55px !important;
+                }
+                &__point{
+                    font-size: 50px !important;
+                    line-height: 50px !important;
+                    margin-right: 20px;
+                    color: #55c57a;
+                    span{
+                        font-size: 16px !important;
+                        margin-right: 7px;
+                        color: #ccc;
+                    }
+                }
+            }
+            p{
+                font-size: 30px;
+                font-weight: 100;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+            a{
+                font-size: 18px !important; text-decoration: none;
+                padding: 10px 30px; border: 2px solid #55c57a;
+                color: #55c57a;
+                transition: .2s;
+            }
+            a:hover{
+                color: #fff;
+                background: #55c57a;
+            }
         }
     }
 
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
+    &__activity{
+        margin-top: 10px;
+        display: flex; align-items: center;
+        div{
+            margin-right: 25px;
+            h1{ font-size: 25px;
+                span{ font-size: 17px; color: #ccc;
+            }}
+        }
+    }
+    &__bio{
+        font-size: 18px;
+        letter-spacing: 1px;
         
     }
+    &__upladedContent{
+        margin-top: 35px;
+        .collam{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            // margin-bottom: 50px;
+            padding: 0 !important;
+        }
+        .content{
+            height: 200px;
+            padding: 5px;
+            margin-bottom: 20px;
 
-    &__logo {
-        height: 6rem;
-    }
-    
-    &__text-box {
-        font-size: 1rem;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+            transition: .4s;
+        }
+        .content:hover{
+            opacity: .5;
+        }
     }
 }
-
-
