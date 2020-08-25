@@ -2213,7 +2213,7 @@ body {
 
 .newsfeed {
   height: 13vh;
-  margin-top: 2rem;
+  margin-top: 0;
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -2224,7 +2224,7 @@ body {
   .newsfeed__pic-box {
     position: relative;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 3rem; }
   .newsfeed__pic {
     height: 30vh;
@@ -2243,24 +2243,131 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
-.feed_container {
-  max-width: 90%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+.feed {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  margin-bottom: 3rem; }
+  .feed__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  .feed__leftsidebar {
+    width: 20%;
+    height: 75vh;
+    position: sticky;
+    top: 0; }
+  .feed__rightsidebar {
+    width: 30%;
+    height: 80vh;
+    padding: 15px 0 15px 15px; }
+    .feed__rightsidebar .top {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px; }
+      .feed__rightsidebar .top__list {
+        list-style-type: none; }
+      .feed__rightsidebar .top__item {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .feed__rightsidebar .top__item__name {
+          display: flex;
+          align-items: center;
+          color: #000; }
+          .feed__rightsidebar .top__item__name img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px; }
+          .feed__rightsidebar .top__item__name .name {
+            margin-right: 10px;
+            margin-bottom: -5px;
+            font-size: 18px !important; }
+          .feed__rightsidebar .top__item__name .username {
+            font-size: 15px !important;
+            color: #ccc !important; }
+        .feed__rightsidebar .top__item .rank, .feed__rightsidebar .top__item .point {
+          font-size: 15px; }
+        .feed__rightsidebar .top__item .point {
+          background: #55c57a;
+          color: #fff;
+          padding: 5px 15px;
+          border-radius: 5px; }
+  .feed__feedbar {
+    width: 50%;
+    min-height: 100px;
+    padding: 15px 25px; }
+    .feed__feedbar__posts {
+      margin-top: 20px; }
+      .feed__feedbar__posts .post {
+        width: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #ccc; }
+        .feed__feedbar__posts .post__user {
+          display: flex;
+          justify-content: space-between; }
+          .feed__feedbar__posts .post__user .user {
+            display: flex;
+            align-items: center; }
+          .feed__feedbar__posts .post__user__image {
+            width: 50px;
+            height: 50px; }
+            .feed__feedbar__posts .post__user__image img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%; }
+          .feed__feedbar__posts .post__user__info {
+            padding-left: 10px;
+            font-size: 16px;
+            color: #000 !important; }
+            .feed__feedbar__posts .post__user__info p, .feed__feedbar__posts .post__user__info span {
+              font-size: 14px;
+              font-weight: 100; }
+            .feed__feedbar__posts .post__user__info p {
+              color: #ccc; }
+            .feed__feedbar__posts .post__user__info span {
+              color: #000; }
+        .feed__feedbar__posts .post__content {
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 300; }
+          .feed__feedbar__posts .post__content .file {
+            width: 100%;
+            margin-top: 15px;
+            padding: 0;
+            border-radius: 5px; }
+            .feed__feedbar__posts .post__content .file img {
+              width: 100%; }
+          .feed__feedbar__posts .post__content .responses {
+            display: flex;
+            justify-content: flex-start; }
+            .feed__feedbar__posts .post__content .responses .response {
+              width: 20%;
+              display: flex;
+              align-items: center; }
+              .feed__feedbar__posts .post__content .responses .response__name {
+                text-decoration: none;
+                font-size: 30px;
+                margin-right: 5px;
+                color: #000; }
+              .feed__feedbar__posts .post__content .responses .response__count {
+                text-decoration: none;
+                font-size: 20px;
+                color: #000; }
 
-.content {
-  display: flex; }
-  @media only screen and (max-width: 56.25em) {
-    .content {
-      flex-direction: column; } }
+.follow a {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 7px 20px;
+  color: #55c57a;
+  border: 2px solid #55c57a;
+  border-radius: 5px;
+  transition: .3s; }
 
-.sidebar {
-  background-color: var(--color-grey-light-3);
-  flex: 0 0 18%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+.follow a:hover {
+  color: #fff;
+  background: #55c57a; }
