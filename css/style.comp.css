@@ -1718,46 +1718,115 @@ body {
     .section-task {
       margin-top: -1vh; } }
 
+@media only screen and (max-width: 37.5em) {
+  .profilePage .feed__leftsidebar {
+    display: none; } }
+
 .profile {
   width: 80%; }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      width: 100%; } }
   .profile .user {
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .profile .user {
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center; } }
     .profile .user__image {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       margin-right: 15px; }
+      @media only screen and (max-width: 37.5em) {
+        .profile .user__image {
+          width: 100px;
+          height: 100px; } }
     .profile .user__name {
       width: 100%; }
       .profile .user__name .name {
         display: flex;
         justify-content: space-between; }
+        @media only screen and (max-width: 37.5em) {
+          .profile .user__name .name {
+            flex-direction: column;
+            align-items: center; } }
         .profile .user__name .name__main {
           font-size: 55px !important;
           color: #000;
           line-height: 55px !important; }
+          @media only screen and (max-width: 37.5em) {
+            .profile .user__name .name__main {
+              font-size: 25px !important;
+              line-height: 25px !important;
+              margin-top: 15px; } }
+        .profile .user__name .name__handle {
+          display: none; }
+          @media only screen and (max-width: 37.5em) {
+            .profile .user__name .name__handle {
+              display: block;
+              font-size: 16px !important; } }
         .profile .user__name .name__point {
           font-size: 50px !important;
           line-height: 50px !important;
           margin-right: 20px;
           color: #55c57a; }
+          @media only screen and (max-width: 37.5em) {
+            .profile .user__name .name__point {
+              position: relative;
+              font-size: 35px !important; } }
           .profile .user__name .name__point span {
             font-size: 16px !important;
             margin-right: 7px;
             color: #ccc; }
+            @media only screen and (max-width: 37.5em) {
+              .profile .user__name .name__point span {
+                display: none; } }
+        @media only screen and (max-width: 37.5em) {
+          .profile .user__name .name__point:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -35px;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 3px;
+            background-color: #55c57a; } }
+        @media only screen and (max-width: 37.5em) {
+          .profile .user__name .name__point:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 3px;
+            background-color: #55c57a; } }
       .profile .user__name p {
         font-size: 30px;
         font-weight: 100;
         line-height: 30px;
         margin-bottom: 20px; }
-      .profile .user__name a {
+        @media only screen and (max-width: 37.5em) {
+          .profile .user__name p {
+            display: none; } }
+      .profile .user__name .link__follow a {
         font-size: 18px !important;
         text-decoration: none;
         padding: 10px 30px;
         border: 2px solid #55c57a;
         color: #55c57a;
         transition: .2s; }
+        @media only screen and (max-width: 37.5em) {
+          .profile .user__name .link__follow a {
+            font-size: 15px;
+            padding: 5px 30px;
+            border-radius: 10px; } }
+      @media only screen and (max-width: 37.5em) {
+        .profile .user__name .link__follow {
+          text-align: center; } }
       .profile .user__name a:hover {
         color: #fff;
         background: #55c57a; }
@@ -1787,22 +1856,45 @@ body {
         .profile__activity div h1 span {
           font-size: 17px;
           color: #ccc; }
+      @media only screen and (max-width: 37.5em) {
+        .profile__activity div {
+          width: 50%;
+          margin: 0;
+          text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .profile__activity {
+        justify-content: center;
+        padding: 0 0 0 20px; } }
   .profile__bio {
     font-size: 18px;
     letter-spacing: 1px; }
+    @media only screen and (max-width: 37.5em) {
+      .profile__bio {
+        margin-top: 10px;
+        padding: 0 30px 0 25px;
+        font-size: 15px;
+        letter-spacing: 0;
+        line-height: 16px; } }
   .profile__upladedContent {
     margin-top: 35px; }
     .profile__upladedContent .collam {
       margin-left: 0 !important;
       margin-right: 0 !important;
       padding: 0 !important; }
-    .profile__upladedContent .content {
-      height: 200px;
-      padding: 5px;
-      margin-bottom: 20px;
-      transition: .4s; }
-    .profile__upladedContent .content:hover {
-      opacity: .5; }
+      @media only screen and (max-width: 37.5em) {
+        .profile__upladedContent .collam {
+          margin-bottom: 10px !important; } }
+      .profile__upladedContent .collam .content {
+        height: 200px;
+        padding: 5px;
+        margin-bottom: 20px;
+        transition: .4s; }
+        @media only screen and (max-width: 37.5em) {
+          .profile__upladedContent .collam .content {
+            margin-bottom: 0;
+            height: 100%; } }
+      .profile__upladedContent .collam .content:hover {
+        opacity: .5; }
 
 .newsfeed {
   height: 13vh;
