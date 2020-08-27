@@ -34,7 +34,7 @@
             </nav>
         </div>
         <!-- profile part      -->
-        <main style="margin-top: 50px;">
+        <main style="margin-top: 50px;" class="profilePage">
             <div class="feed">
                 <div class="feed__row">
                     <div class="feed__leftsidebar">
@@ -76,13 +76,16 @@
                             <div class="user__name">
                                 <div class="name">
                                     <div class="name__main">Shamiul Shopnil</div>
+                                    <p class="name__handle">Shopnil1603</p>
                                     <div class="name__point"><span>Points</span>2134</div>
                                 </div>
                                 <p>Shopnil1603</p>
                                 <!-- if it is not user -->
-                                <a class="followLink" href="#">Follow</a>
-                                <!-- if it is user -->
-                                <!-- <a class="editLink" href="#">Edit</a> -->
+                                <div  class="link__follow">
+                                    <a class="followLink" href="#">Follow</a>
+                                    <!-- if it is user -->
+                                    <!-- <a class="editLink" href="#">Edit</a> -->
+                                </div>
                             </div>
                         </div>
                         <div class="profile__activity">
@@ -99,7 +102,7 @@
                             <div class="row">
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -107,16 +110,7 @@
                                 </div>
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
-                                            <source src='/img/video.mp4' type="video/mp4">
-                                            <source src='/img/video.webm' type="video/webm">
-                                        </video>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 collam">
-                                    <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -125,7 +119,7 @@
 
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -134,7 +128,16 @@
 
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
+                                            <source src='/img/video.mp4' type="video/mp4">
+                                            <source src='/img/video.webm' type="video/webm">
+                                        </video>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 collam">
+                                    <div class="content">
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -240,8 +243,5 @@
                 </div>
             </div>
         </div>
-
-       
-        
     </body>
 </html>
