@@ -92,16 +92,16 @@
             margin-right: 0 !important;
             // margin-bottom: 50px;
             padding: 0 !important;
-        }
-        .content{
-            height: 200px;
-            padding: 5px;
-            margin-bottom: 20px;
 
-            transition: .4s;
-        }
-        .content:hover{
-            opacity: .5;
+            .content{
+                height: 200px;
+                padding: 5px;
+                margin-bottom: 20px;
+                transition: .4s;
+            }
+            .content:hover{
+                opacity: .5;
+            }
         }
     }
 }
