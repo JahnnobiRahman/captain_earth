@@ -1945,6 +1945,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .feed__leftsidebar {
+        display: none; } }
     .feed__leftsidebar .sidelink {
       display: flex;
       align-items: center;
@@ -2023,6 +2026,12 @@ body {
     width: 30%;
     height: 80vh;
     padding: 15px 0 15px 15px; }
+    @media only screen and (max-width: 37.5em) {
+      .feed__rightsidebar {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+        height: inherit; } }
     .feed__rightsidebar .top {
       margin-top: 20px;
       padding: 20px;
@@ -2062,6 +2071,9 @@ body {
     width: 50%;
     min-height: 100px;
     padding: 15px 25px; }
+    @media only screen and (max-width: 37.5em) {
+      .feed__feedbar {
+        width: 100%; } }
     .feed__feedbar__posts {
       margin-top: 20px; }
       .feed__feedbar__posts .post {
@@ -2093,6 +2105,9 @@ body {
               color: #ccc; }
             .feed__feedbar__posts .post__user__info span {
               color: #000; }
+              @media only screen and (max-width: 37.5em) {
+                .feed__feedbar__posts .post__user__info span {
+                  display: none; } }
         .feed__feedbar__posts .post__content {
           margin-top: 10px;
           font-size: 16px;
@@ -2115,11 +2130,21 @@ body {
                 text-decoration: none;
                 font-size: 30px;
                 margin-right: 5px;
-                color: #000; }
+                color: #333; }
+                @media only screen and (max-width: 37.5em) {
+                  .feed__feedbar__posts .post__content .responses .response__name {
+                    font-size: 16px; } }
               .feed__feedbar__posts .post__content .responses .response__count {
                 text-decoration: none;
                 font-size: 20px;
-                color: #000; }
+                color: #333; }
+                @media only screen and (max-width: 37.5em) {
+                  .feed__feedbar__posts .post__content .responses .response__count {
+                    font-size: 17px; } }
+
+@media only screen and (max-width: 37.5em) {
+  .follow {
+    padding-top: 20px !important; } }
 
 .follow a {
   font-size: 16px;
@@ -2129,7 +2154,19 @@ body {
   border: 2px solid #55c57a;
   border-radius: 5px;
   transition: .3s; }
+  @media only screen and (max-width: 37.5em) {
+    .follow a {
+      font-size: 14px;
+      padding: 3px 10px; } }
 
 .follow a:hover {
   color: #fff;
   background: #55c57a; }
+
+a.seemore {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333; }
+
+a.seemore:hover {
+  color: #55c57a; }
