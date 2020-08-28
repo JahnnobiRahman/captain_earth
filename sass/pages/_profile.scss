@@ -1,4 +1,5 @@
 .profilePage{
+    @include respond(tab-port) { .feed__leftsidebar{ display: none; } }
     @include respond(phone) { .feed__leftsidebar{ display: none; } }
 }
 
@@ -6,6 +7,7 @@
 .profile{
     width: 80%;
     @include respond(phone) { width: 100%; }
+    @include respond(tab-port) { width: 100%; }
     .user{
         display: flex;
         align-items: center;
@@ -13,6 +15,8 @@
             padding: 10px; 
             flex-direction: column; justify-content: center;
         }
+        @include respond(tab-port) {padding: 40px;}
+        
         &__image{
             width: 200px;
             height: 200px;
@@ -29,11 +33,15 @@
                 @include respond(phone) {
                     flex-direction: column; align-items: center;
                 }
+                
                 &__main{
                     font-size: 55px !important; color: #000;
                     line-height: 55px !important;
                     @include respond(phone) {
                         font-size: 25px !important; line-height: 25px !important; margin-top: 15px;
+                    }
+                    @include respond(tab-port) {
+                        font-size: 35px !important; line-height: 35px !important; margin-top: 15px;
                     }
                 }
                 &__handle{
@@ -46,6 +54,7 @@
                     margin-right: 20px;
                     color: #55c57a;
                     @include respond(phone) { position: relative; font-size: 35px !important; }
+                    @include respond(tab-port) {font-size: 25px !important; }
                     span{
                         font-size: 16px !important;
                         margin-right: 7px;
@@ -78,15 +87,20 @@
                 line-height: 30px;
                 margin-bottom: 20px;
                 @include respond(phone) { display: none; }
+                @include respond(tab-port) { font-size: 16px; line-height: 16px; }
             }
             .link__follow{
                 a{
                     font-size: 18px !important; text-decoration: none;
                     padding: 10px 30px; border: 2px solid #55c57a;
+                    border-radius: 5px;
                     color: #55c57a;
                     transition: .2s;
                     @include respond(phone) {
-                        font-size: 15px; padding: 5px 30px; border-radius: 10px;
+                        font-size: 15px; padding: 5px 30px;
+                     }
+                     @include respond(tab-port) {
+                        font-size: 16px; padding: 5px 30px;
                      }
                 }
                 @include respond(phone) { text-align: center; }
@@ -128,9 +142,9 @@
             h1{ font-size: 25px;
                 span{ font-size: 17px; color: #ccc;
             }}
-            @include respond(phone) {width: 50%; margin: 0; text-align: center;}
+            @include respond(tab-port) {width: 50%; margin: 0; text-align: center;}
         }
-        @include respond(phone) { justify-content: center; padding: 0 0 0 20px;}
+        @include respond(tab-port) { justify-content: center; padding: 0 0 0 20px;}
     }
     &__bio{
         font-size: 18px;
@@ -140,15 +154,22 @@
             padding: 0 30px 0 25px; 
             font-size: 15px; letter-spacing: 0; line-height: 16px;
         }
+        @include respond(tab-port) { 
+            padding: 0 40px 0 40px; 
+            font-size: 16px; letter-spacing: 0; line-height: 16px;
+        }
         
     }
     &__upladedContent{
         margin-top: 35px;
+        .row{@include respond(tab-port) { max-width: 100% !important;}}
+        
         .collam{
             margin-left: 0 !important;
             margin-right: 0 !important;
             // margin-bottom: 50px;
             @include respond(phone) { margin-bottom: 10px !important;}
+            @include respond(tab-port) { margin-bottom: 10px !important;}
             padding: 0 !important;
 
             .content{
@@ -157,6 +178,7 @@
                 margin-bottom: 20px;
                 transition: .4s;
                 @include respond(phone) {margin-bottom: 0; height: 100%}
+                @include respond(tab-port) {margin-bottom: 0; height: 100%}
             }
             .content:hover{
                 opacity: .5;
