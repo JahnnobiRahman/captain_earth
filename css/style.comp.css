@@ -1937,6 +1937,9 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 56.25em) {
+      .feed__row {
+        justify-content: space-between; } }
   .feed__leftsidebar {
     width: 20%;
     max-height: 90vh;
@@ -1945,6 +1948,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .feed__leftsidebar {
+        display: none; } }
     @media only screen and (max-width: 37.5em) {
       .feed__leftsidebar {
         display: none; } }
@@ -2032,6 +2038,10 @@ body {
         padding: 20px;
         margin-bottom: 10px;
         height: inherit; } }
+    @media only screen and (max-width: 56.25em) {
+      .feed__rightsidebar {
+        width: 40%;
+        padding-right: 30px; } }
     .feed__rightsidebar .top {
       margin-top: 20px;
       padding: 20px;
@@ -2053,6 +2063,9 @@ body {
             height: 50px;
             border-radius: 50%;
             margin-right: 10px; }
+            @media only screen and (max-width: 56.25em) {
+              .feed__rightsidebar .top__item__name img {
+                display: none; } }
           .feed__rightsidebar .top__item__name .name {
             margin-right: 10px;
             margin-bottom: -5px;
@@ -2060,6 +2073,9 @@ body {
           .feed__rightsidebar .top__item__name .username {
             font-size: 15px !important;
             color: #ccc !important; }
+        @media only screen and (max-width: 56.25em) {
+          .feed__rightsidebar .top__item .rank {
+            display: none; } }
         .feed__rightsidebar .top__item .rank, .feed__rightsidebar .top__item .point {
           font-size: 15px; }
         .feed__rightsidebar .top__item .point {
@@ -2067,10 +2083,17 @@ body {
           color: #fff;
           padding: 5px 15px;
           border-radius: 5px; }
+          @media only screen and (max-width: 56.25em) {
+            .feed__rightsidebar .top__item .point {
+              color: #55c57a;
+              background: #fff; } }
   .feed__feedbar {
     width: 50%;
     min-height: 100px;
     padding: 15px 25px; }
+    @media only screen and (max-width: 56.25em) {
+      .feed__feedbar {
+        width: 60%; } }
     @media only screen and (max-width: 37.5em) {
       .feed__feedbar {
         width: 100%; } }
