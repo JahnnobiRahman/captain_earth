@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
         <!-- BOOTSTRAP CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.comp.css">
         <link rel="shortcut icon" type="image/jpg" href="img/ehero.jpg" style="clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
         <title>Captain Earth | Be important be of value </title>
     </head>
@@ -34,7 +34,7 @@
             </nav>
         </div>
         <!-- profile part      -->
-        <main style="margin-top: 50px;">
+        <main style="margin-top: 50px;" class="profilePage">
             <div class="feed">
                 <div class="feed__row">
                     <div class="feed__leftsidebar">
@@ -76,13 +76,16 @@
                             <div class="user__name">
                                 <div class="name">
                                     <div class="name__main">Shamiul Shopnil</div>
+                                    <p class="name__handle">Shopnil1603</p>
                                     <div class="name__point"><span>Points</span>2134</div>
                                 </div>
                                 <p>Shopnil1603</p>
                                 <!-- if it is not user -->
-                                <a class="followLink" href="#">Follow</a>
-                                <!-- if it is user -->
-                                <!-- <a class="editLink" href="#">Edit</a> -->
+                                <div  class="link__follow">
+                                    <a class="followLink" href="#">Follow</a>
+                                    <!-- if it is user -->
+                                    <!-- <a class="editLink" href="#">Edit</a> -->
+                                </div>
                             </div>
                         </div>
                         <div class="profile__activity">
@@ -99,7 +102,7 @@
                             <div class="row">
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -107,16 +110,7 @@
                                 </div>
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
-                                            <source src='/img/video.mp4' type="video/mp4">
-                                            <source src='/img/video.webm' type="video/webm">
-                                        </video>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 collam">
-                                    <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -125,7 +119,7 @@
 
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -134,7 +128,16 @@
 
                                 <div class="col-md-4 collam">
                                     <div class="content">
-                                        <video width="100%" autoplay>
+                                        <video width="100%" controls>
+                                            <source src='/img/video.mp4' type="video/mp4">
+                                            <source src='/img/video.webm' type="video/webm">
+                                        </video>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 collam">
+                                    <div class="content">
+                                        <video width="100%" controls>
                                             <source src='/img/video.mp4' type="video/mp4">
                                             <source src='/img/video.webm' type="video/webm">
                                         </video>
@@ -240,8 +243,5 @@
                 </div>
             </div>
         </div>
-
-       
-        
     </body>
 </html>

@@ -56,6 +56,7 @@ margin-bottom: 3rem;
 &__row{
   width: 100%;
   display: flex;
+  @include respond(tab-port) { justify-content: space-between; }
   flex-wrap: wrap;
 }
 
@@ -69,6 +70,8 @@ margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include respond(tab-port) { display: none; }
+  @include respond(phone) { display: none; }
 
   .sidelink{
     display: flex;
@@ -171,6 +174,9 @@ margin-bottom: 3rem;
   width: 30%;
   height: 80vh;
   padding: 15px 0 15px 15px;
+  @include respond(phone) { width: 100%; padding: 20px; margin-bottom: 10px; height: inherit;}
+  @include respond(tab-port) { width: 40%; padding-right: 30px;}
+ 
 
   .top{
     margin-top: 20px;
@@ -196,9 +202,13 @@ margin-bottom: 3rem;
             height: 50px;
             border-radius: 50%;
             margin-right: 10px;
+            @include respond(tab-port) { display: none; }
           }
           .name{ margin-right: 10px; margin-bottom: -5px; font-size: 18px !important;}
           .username { font-size: 15px !important; color: #ccc !important; }
+        }
+        .rank{
+          @include respond(tab-port) { display: none;}
         }
         .rank, .point{
           font-size: 15px;
@@ -208,6 +218,10 @@ margin-bottom: 3rem;
           color: #fff;
           padding: 5px 15px;
           border-radius: 5px;
+          @include respond(tab-port) { 
+            color: #55c57a;
+            background: #fff;
+          }
         }
     }
   }
@@ -218,6 +232,9 @@ margin-bottom: 3rem;
   width: 50%;
   min-height: 100px;
   padding: 15px 25px;
+  @include respond(tab-port) { width: 60%; }
+  @include respond(phone) { width: 100%;}
+
 
   // all post
   &__posts{
@@ -253,7 +270,10 @@ margin-bottom: 3rem;
             font-weight: 100;
           }
           p{color: #ccc;}
-          span{color: #000;}
+          span{
+            color: #000;
+            @include respond(phone) { display: none;}
+          }
         }
       }
       //end of post user
@@ -288,12 +308,18 @@ margin-bottom: 3rem;
               text-decoration: none;
               font-size: 30px;
               margin-right: 5px;
-              color: #000;
+              color: #333;
+              @include respond(phone) { 
+                font-size: 16px;
+              }
             }
             &__count{
               text-decoration: none;
               font-size: 20px;
-              color: #000;
+              color: #333;
+              @include respond(phone) { 
+                font-size: 17px;
+              }
             }
           }
         }
@@ -307,17 +333,33 @@ margin-bottom: 3rem;
 }
 //end of feedbar
 }
-
+.follow{
+  @include respond(phone) { 
+    padding-top: 20px !important;
+  }
+}
 .follow a{
-font-size: 16px;
-text-decoration: none;
-padding: 7px 20px;
-color: #55c57a;
-border: 2px solid #55c57a;
-border-radius: 5px;
-transition: .3s;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 7px 20px;
+  color: #55c57a;
+  border: 2px solid #55c57a;
+  border-radius: 5px;
+  transition: .3s;
+  @include respond(phone) { 
+    font-size: 14px;
+    padding: 3px 10px;
+  }
 }
 .follow a:hover{
 color: #fff;
 background: #55c57a;
+}
+a.seemore{
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+a.seemore:hover{
+  color: #55c57a;
 }
