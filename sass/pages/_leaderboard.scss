@@ -1,0 +1,92 @@
+.heading__box{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    h1{font-size: 65px !important;}
+}
+
+// leaderboard category
+.leaderCategory{
+    width: 100%;
+    display: flex;
+    align-items: center; justify-content: space-between;
+    // flex-wrap: wrap;
+    &__type{
+        width: 22%; height: 250px;
+        padding: 20px;
+        background: #fff;
+        border: none; border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        cursor: pointer;
+        transition: .5s;
+
+        img{
+            height: 100px; width: 100px;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+// leaderboard ranking
+.ranking{
+    margin-top: 60px;
+    
+    // personal ranking
+    &__personal{
+        margin-bottom: 50px;
+        margin-top: 20px;
+        .data{
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+    }
+
+    // global ranking
+    &__global{
+        margin-top: 20px;margin-bottom: 50px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        .heading{
+            background: #55c57a !important;
+            border-radius: 10px 10px 0 0;
+            .data__item{
+                h2{color: #fff;}
+            }
+        }
+        .data{ border-bottom: 1.5px solid #f7f7f7; }
+        .data:nth-last-child(1){ border-radius: 0 0 10px 10px;}
+    }
+
+    //for each data items
+    .data{
+        padding: 10px;
+        display: flex; align-items: center;  flex-wrap: wrap;
+        background: #fff;
+        .rank{width: 10%; border-right: 1.5px solid #f7f7f7;}
+        .userInfo{width: 35%; border-right: 1.5px solid #f7f7f7;}
+        .point{width: 20%; border-right: 1.5px solid #f7f7f7;}
+        .badges{width: 35%;}
+
+        &__item{
+            padding: 5px 10px; text-align: center;
+            h2{ font-size: 19px; color: #000; }
+            .user{
+                display: flex;
+                align-items: center; justify-content: center;
+                img{
+                    width: 50px; height: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                &__name h1{ font-size: 20px; }
+            }
+            .badges__box{
+                display: flex; align-items: center; justify-content: center;
+                img{ width: 40px; height: 40px; margin-right: 10px; }
+            }
+        }
+    }
+}
