@@ -1,13 +1,22 @@
+.leaderboardPage{
+    background: #f7f7f7;
+    padding: 50px 80px;
+    @include respond(phone) { padding: 25px 40px; }
+
+}
 .heading__box{
     margin-top: 50px;
     margin-bottom: 35px;
-    h1{font-size: 65px !important;}
+    h1{
+        font-size: 65px !important;
+        @include respond(phone) { font-size: 30px !important; }
+    }
 }
 
 // leaderboard category
 .leaderCategory{
     width: 100%;
-    display: flex;
+    display: flex; flex-wrap: wrap;
     align-items: center; justify-content: space-between;
     // flex-wrap: wrap;
     &__type{
@@ -21,8 +30,20 @@
         cursor: pointer;
         transition: .5s;
 
+        @include respond(phone) { 
+            width: 45%; height: 125px;
+            padding: 10px;
+            margin-bottom: 30px;
+            h2{
+                text-align: center;
+                font-size: 16px;
+                margin-top: 5px;
+            }
+         }
+
         img{
             height: 100px; width: 100px;
+            @include respond(phone) { height: 50px; width: 50px; }
         }
         &:hover{
             transform: scale(1.2);
@@ -33,6 +54,7 @@
 // leaderboard ranking
 .ranking{
     margin-top: 60px;
+    h1{ @include respond(phone) { font-size: 18px; } }
     
     // personal ranking
     &__personal{
@@ -72,7 +94,13 @@
 
         &__item{
             padding: 5px 10px; text-align: center;
-            h2{ font-size: 19px; color: #000; }
+            @include respond(phone) { padding: 2.5px 5px; }
+
+            h2{ 
+                font-size: 19px; 
+                color: #000; 
+                @include respond(phone) { font-size: 10px; }
+            }
             .user{
                 display: flex;
                 align-items: center; justify-content: center;
@@ -80,12 +108,16 @@
                     width: 50px; height: 50px;
                     border-radius: 50%;
                     margin-right: 10px;
+                    @include respond(phone) { display: none; }
                 }
-                &__name h1{ font-size: 20px; }
             }
             .badges__box{
                 display: flex; align-items: center; justify-content: center;
-                img{ width: 40px; height: 40px; margin-right: 10px; }
+                img{ 
+                    width: 40px; height: 40px;
+                    margin-right: 10px; 
+                    @include respond(phone) { width: 20px; height: 20px; margin-right: 5px;}
+                }
             }
         }
     }
