@@ -1,0 +1,107 @@
+.questionpage{
+    background: #f7f7f7;
+    padding: 0 80px;
+    @include respond(phone) { padding: 25px 20px; }
+    
+    .heading__box{
+        h1{margin-bottom: 5px;}
+    }
+
+    .answerProgress{
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        margin-bottom: 20px;        
+        h1{
+            font-size: 16px; color: #000;
+            span{
+                font-size: 20px; color: $color-primary;
+            }
+        }
+        &__box{
+            height: 20px; width: 100%; border-radius: 10px;
+            background: #f7f7f7;
+            @include respond(phone) { height: 10px; border-radius: 5px;}
+            &__progress{
+                height: 20px; width: 0%; border-radius: 10px;
+                background: linear-gradient(to left, $color-primary-light, $color-primary-dark);
+                @include respond(phone) { height: 10px; border-radius: 5px;}
+            }
+        }
+    }
+}
+
+.questions{
+    margin-bottom: 30px;
+    &__box{
+        padding: 20px 40px 30px 40px;
+        background: $color-white;
+        border: none; border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        font-family: 'CharukolaUltraLight', sans-serif;
+        color: #000;
+        font-weight: bold;
+        @include respond(phone) { padding: 10px 20px 15px 20px; }
+
+        &__questions{
+            h2{ 
+                font-size: 30px; margin-bottom: -10px;
+                @include respond(phone) { font-size: 20px; }
+            }
+            h3{ 
+                font-size: 20px; line-height: 23px;
+                @include respond(phone) { font-size: 12px; line-height: 15px;}
+            }
+            p{
+                @include respond(phone) { display: none; }
+            }
+        }
+
+        &__answers{
+            border: 2px solid #cccc;
+            border-radius: 10px;
+            font-size: 20px;
+
+            .answer{
+                border-bottom: 2px solid #ccc;
+                cursor: pointer;
+                display: flex; align-items: center;
+                
+                .center{
+                    width: 60px; height: 60px;
+                    display: flex; justify-content: center; align-items: center;
+                    div{ 
+                        width: 30px; height: 30px; 
+                        border-radius: 50%; 
+                        border: 5px solid $color-primary;
+                        @include respond(phone) { width: 15px; height: 15px; border: 2px solid $color-primary;}
+                    }
+                    @include respond(phone) { width: 30px; height: 30px; }
+                }
+                .ans{
+                    width: 90%; height: 55px;
+                    display: flex; text-align: center; align-items: center;
+                    @include respond(phone) { font-size: 10px; height: 35px;}
+                }
+            }
+            .anserSelected{
+                background: $color-primary; color: #fff;
+                .center div{ 
+                    border: 5px solid #fff; 
+                    @include respond(phone) { border: 2px solid #fff;}
+                }
+            }
+        }
+    }
+}
+
+.btn__box{
+    display: flex;
+    justify-content: space-between; align-items: center;
+    #btn__next, #btn__previous{
+        background: $color-primary;
+        color: $color-white;
+        padding: 10px 30px !important;
+    }
+}

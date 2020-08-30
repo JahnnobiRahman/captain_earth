@@ -2376,3 +2376,129 @@ a.seemore:hover {
               width: 20px;
               height: 20px;
               margin-right: 5px; } }
+
+.questionpage {
+  background: #f7f7f7;
+  padding: 0 80px; }
+  @media only screen and (max-width: 37.5em) {
+    .questionpage {
+      padding: 25px 20px; } }
+  .questionpage .heading__box h1 {
+    margin-bottom: 5px; }
+  .questionpage .answerProgress {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px; }
+    .questionpage .answerProgress h1 {
+      font-size: 16px;
+      color: #000; }
+      .questionpage .answerProgress h1 span {
+        font-size: 20px;
+        color: #55c57a; }
+    .questionpage .answerProgress__box {
+      height: 20px;
+      width: 100%;
+      border-radius: 10px;
+      background: #f7f7f7; }
+      @media only screen and (max-width: 37.5em) {
+        .questionpage .answerProgress__box {
+          height: 10px;
+          border-radius: 5px; } }
+      .questionpage .answerProgress__box__progress {
+        height: 20px;
+        width: 0%;
+        border-radius: 10px;
+        background: linear-gradient(to left, #7ed56f, #28b485); }
+        @media only screen and (max-width: 37.5em) {
+          .questionpage .answerProgress__box__progress {
+            height: 10px;
+            border-radius: 5px; } }
+
+.questions {
+  margin-bottom: 30px; }
+  .questions__box {
+    padding: 20px 40px 30px 40px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'CharukolaUltraLight', sans-serif;
+    color: #000;
+    font-weight: bold; }
+    @media only screen and (max-width: 37.5em) {
+      .questions__box {
+        padding: 10px 20px 15px 20px; } }
+    .questions__box__questions h2 {
+      font-size: 30px;
+      margin-bottom: -10px; }
+      @media only screen and (max-width: 37.5em) {
+        .questions__box__questions h2 {
+          font-size: 20px; } }
+    .questions__box__questions h3 {
+      font-size: 20px;
+      line-height: 23px; }
+      @media only screen and (max-width: 37.5em) {
+        .questions__box__questions h3 {
+          font-size: 12px;
+          line-height: 15px; } }
+    @media only screen and (max-width: 37.5em) {
+      .questions__box__questions p {
+        display: none; } }
+    .questions__box__answers {
+      border: 2px solid #cccc;
+      border-radius: 10px;
+      font-size: 20px; }
+      .questions__box__answers .answer {
+        border-bottom: 2px solid #ccc;
+        cursor: pointer;
+        display: flex;
+        align-items: center; }
+        .questions__box__answers .answer .center {
+          width: 60px;
+          height: 60px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .questions__box__answers .answer .center div {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 5px solid #55c57a; }
+            @media only screen and (max-width: 37.5em) {
+              .questions__box__answers .answer .center div {
+                width: 15px;
+                height: 15px;
+                border: 2px solid #55c57a; } }
+          @media only screen and (max-width: 37.5em) {
+            .questions__box__answers .answer .center {
+              width: 30px;
+              height: 30px; } }
+        .questions__box__answers .answer .ans {
+          width: 90%;
+          height: 55px;
+          display: flex;
+          text-align: center;
+          align-items: center; }
+          @media only screen and (max-width: 37.5em) {
+            .questions__box__answers .answer .ans {
+              font-size: 10px;
+              height: 35px; } }
+      .questions__box__answers .anserSelected {
+        background: #55c57a;
+        color: #fff; }
+        .questions__box__answers .anserSelected .center div {
+          border: 5px solid #fff; }
+          @media only screen and (max-width: 37.5em) {
+            .questions__box__answers .anserSelected .center div {
+              border: 2px solid #fff; } }
+
+.btn__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .btn__box #btn__next, .btn__box #btn__previous {
+    background: #55c57a;
+    color: #fff;
+    padding: 10px 30px !important; }
