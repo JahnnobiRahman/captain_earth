@@ -1,0 +1,63 @@
+.login__container{
+    min-height: 92vh; width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__logoBox{
+        width: 50%; height: 92vh;
+        background: linear-gradient(180deg, $color-primary-light 0%, $color-primary-dark 100%);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center; align-items: center;
+        
+        img{
+            transition: 0.4s;
+            @include respond(phone){ margin-bottom: -50px; }
+            @include respond(tab-port){ margin-bottom: -65px; }
+        }
+        img:hover{ transform: scale(1.15);}
+        @include respond(tab-port) { width: 100%; height: 60vh; align-items: flex-end;}
+        @include respond(phone) {height: 50vh;}
+    }
+    &__items{
+        width: 50%; height: 92vh;
+        display: flex;
+        justify-content: center; align-items: center;
+        @include respond(tab-port) { width: 100%; height: 60vh;}
+        
+        .login__options{
+            width: 60%;
+            padding: 20px;
+            @include respond(phone) { width: 100%; }
+            
+            h1{
+                font-size: 35px; text-align: center; width: 100% !important;
+                @include respond(phone) { font-size: 25px; }
+            }
+            p { 
+                margin-bottom: 20px; font-size: 16px; text-align: center;
+                @include respond(phone) { font-size: 12px; }
+            }
+
+            &__option{
+                padding: 10px; margin-bottom: 20px;
+                color: #fff;
+                border-radius: 10px;
+                transition: 0.4s;
+                @include respond(phone) { padding: 5px; width: 70%; margin: auto;  margin-bottom: 20px;}
+                h1{
+                    font-size: 20px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    span{margin-right: 10px;}
+                    @include respond(phone) { font-size: 15px; padding-bottom: 5px;}
+                }
+            }
+            &__option:hover{ transform: scale(1.03); box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+            .facebook{ background: #3b5998; cursor: pointer; }
+            .google {background: #D93636; cursor: pointer; }
+        }
+    }
+
+}
