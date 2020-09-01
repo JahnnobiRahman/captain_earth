@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-    <!-- BANGLA FONT -->
-    <link href="https://fonts.maateen.me/charukola-ultra-light/font.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.comp.css">
+    <!--<link rel="stylesheet" href="css/icon-font.css">-->
+    <!-- FONTAWSOME CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/jpg" href="img/ehero.jpg"
         style="clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
-
     <title>Captain Earth | Be important be of value </title>
 </head>
-<body class="questionpage">
 
-    <!-- navigation -->
+<body class="postdetailPage">
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
@@ -31,83 +31,68 @@
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#" class="navigation__link">About Captain Earth</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Profile Info</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Leader Board</a></li>
+                <li class="navigation__item"><a href="profile.html" class="navigation__link">Profile Info</a></li>
+                <li class="navigation__item"><a href="leaderboard.html" class="navigation__link">Leader Board</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Weekly Evaluation</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- Top heading -->
-    <div class="heading__box">
-        <h1 class="heading-secondary">Questions</h1>
-        <h2 class="heading-tertiary">5 questions to measure mental well-being</h2>
-    </div>
-
-    <!-- Progress box -->
-    <div class="answerProgress">
-        <h1>Progress <span id="progressText">0%</span></h1>
-        <div class="answerProgress__box">
-            <div class="answerProgress__box__progress" id="progress"></div>
+    
+    <main class="postdetail">
+        <!-- video block -->
+        <div class="postdetail__video">
+            <video width="100%" controls>
+                <source src='/img/video.mp4' type="video/mp4">
+                <source src='/img/video.webm' type="video/webm">
+            </video>
         </div>
-    </div>
 
-    <!-- Questions -->
-    <div class="questions">
-        <!-- QUESTION BOX - 1 -->
-        <div class="questions__box" id="q-1">
-            <!-- question -->
-            <div class="questions__box__questions">
-                <h2 id="question"> <!-- english question --> </h2>
-                <h3 id="questionBangla"> <!-- bangla question  --> </h3>
-                <p class="smallMessage">Please indicate for each of the five statements which is closest to how you have been feeling over the last two weeks.</p>
+        <!-- doc block -->
+        <div class="postdetail__doc">
+            <!-- doc -->
+            <div class="doc">
+                <h1>Title</h1>
+                <div class="user">
+                    <div class="post__user__image">
+                        <img src="./img/dp.jpg" alt="userpic" />
+                    </div>
+                    <div class="post__user__info">
+                        <h2 class="name">Samiul Shopnil</h2>
+                        <p>25 AUG 10:11AM</p>
+                    </div>
+                </div>
+                <div class="doc__caption">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, est? Natus, id! Id, corporis porro optio, voluptas error repudiandae ad ut iusto dolor, ipsa nemo quam perspiciatis voluptate consequatur explicabo perferendis minus unde quod tenetur molestiae ipsum? Ratione at corporis inventore doloremque soluta doloribus, et magnam, aperiam est, adipisci eveniet.</p>
+                </div>
             </div>
-            <!-- answers -->
-            <div class="questions__box__answers">
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="1">All of the time</div>
+            <!-- doc response -->
+            <div class="responses">
+                <div class="response">
+                    <a href="#" class="response__name"><i class="fas fa-download"></i><a>
+                    <a href="#" class="response__count">812</a>
                 </div>
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="2">Most of the time</div>
+                <div class="response">
+                    <a href="#" class="response__name"><i class="fas fa-upload"></i></a>
+                    <a href="#" class="response__count">119</a>
                 </div>
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="3">More than half of the time</div>
-                </div>
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="4">Less than half of the time</div>
-                </div>
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="5">Some of the time</div>
-                </div>
-                <div class="answer">
-                    <div class="center"><div></div></div>
-                    <div class="ans" data-number="6">At no time</div>
+                <div class="response">
+                    <a href="#" class="response__name"><i class="far fa-share-square"></i></a>
+                    <a href="#" class="response__count">56</a>
                 </div>
             </div>
         </div>
-
-        <div class="btn__box">
-            <button class="btn" id="btn__previous">Previous</button>
-            <button class="btn" id="btn__next">Next</button>
-        </div>
-
-    </div>
+    </main>
 
 
-    <!-- FOOTER SECTION -->
+
     <footer class="footer">
         <div class="footer__logo-box">
             <picture class="footer__logo">
-                <source srcset="img/Emblem.png 1x, img/Emblem.png 2x" media="(max-width: 37.5em)">
-                <img srcset="img/Emblem.png 1x, img/Emblem.png 2x" alt="Full logo" class="footer__logo"
-                    src="img/Emblem.png">
+                <source srcset="img/ehero.jpg 1x, img/ehero.jpg 2x" media="(max-width: 37.5em)">
+                <img srcset="img/ehero.jpg 1x, img/ehero.jpg 2x" alt="Full logo" src="img/ehero.jpg"
+                    style="clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);">
             </picture>
-        </div>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -132,7 +117,6 @@
             </div>
         </div>
     </footer>
-
 
     <div class="popup" id="popup">
         <div class="popup__content">
@@ -194,8 +178,6 @@
             </div>
         </div>
     </div>
-
-    <script src="./js/question.js"></script>
 </body>
 
 </html>
